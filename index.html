@@ -1211,11 +1211,16 @@
             }
         }
 
-        if(selectNigai == "韓国語" || selectNigai == "ロシア語") {
+        if(selectNigai == "ロシア語") {
             document.getElementById("sat1Z").textContent = selectNigai + 'Ⅰ(A)-1';
             document.getElementById("sat2Z").textContent = selectNigai + 'Ⅰ(B)-1';
             document.getElementById("sat1K").textContent = selectNigai + 'Ⅰ(A)-2';
             document.getElementById("sat2K").textContent = selectNigai + 'Ⅰ(B)-2';
+        }else if (selectNigai == "韓国語"){
+            document.getElementById("tue3Z").textContent = selectNigai + 'Ⅰ(B)-1';
+            document.getElementById("thu3Z").textContent = selectNigai + 'Ⅰ(A)-1';
+            document.getElementById("tue3K").textContent = selectNigai + 'Ⅰ(B)-2';
+            document.getElementById("thu3K").textContent = selectNigai + 'Ⅰ(A)-2';
         }else {
             document.getElementById("tue3Z").textContent = selectNigai + 'Ⅰ(A)-1';
             document.getElementById("thu3Z").textContent = selectNigai + 'Ⅰ(B)-1';
