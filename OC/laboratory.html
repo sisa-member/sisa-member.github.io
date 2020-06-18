@@ -36,7 +36,8 @@
         <ul class="header_menu">
           <li class="menu01 header_menu_list"><a href="about.html">学部紹介<br><span class="en">about</span></a></li>
           <li class="menu02 header_menu_list"><a href="class.html">授業紹介<br><span class="en">class</span></a></li>
-          <li class="menu03 header_menu_list now"><a href="laboratory.html">研究室紹介<br><span class="en">laboratory</span></a>
+          <li class="menu03 header_menu_list now"><a href="laboratory.html">研究室紹介<br><span
+                class="en">laboratory</span></a>
           </li>
           <li class="logo"><a href="home.html">
               <h1><img src="image/syajo.png" alt="社会情報学部" /></h1><span class="en">School of Social Informatics</span>
@@ -53,25 +54,17 @@
 
     <br><br><br><br>
     <div class="products">
-      <input class="sort-radio" type="radio" name="sort-radio" id="ni" />
-      <input class="sort-radio" type="radio" name="sort-radio" id="sya" />
-      <input class="sort-radio" type="radio" name="sort-radio" id="jo" />
       <div class="products__sort">
-        <div class="products__sort1">
-          <label class="button" for="ni">　　人間　　</label>
-        </div>
-        <div class="products__sort2">
-          <label class="button" for="sya">　　社会　　</label>
-        </div>
-        <div class="products__sort3">
-          <label class="button" for="jo">　　情報　　</label>
-        </div>
+        <input type="button" class="products__sort0" value="一覧" onclick="clickBtnIchiran()">
+        <input type="button" class="products__sort1" value="人間" onclick="clickBtnNingen()">
+        <input type="button" class="products__sort2" value="社会" onclick="clickBtnSyakai()">
+        <input type="button" class="products__sort3" value="情報" onclick="clickBtnJouhou()">
       </div>
 
 
       <div class="products__wrap">
 
-        <div class="product" data-product-type="jo">
+        <div class="product jo">
           <input id="acd-check1" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check1">飯島 泰裕 教授</label>
           <div class="acd-content">
@@ -91,7 +84,7 @@
         </div>
 
 
-        <div class="product" data-product-type="sya">
+        <div class="product sya">
           <input id="acd-check2" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check2">石田 博之 教授</label>
           <div class="acd-content">
@@ -110,7 +103,7 @@
           </div>
         </div>
 
-        <div class="product" data-product-type="jo">
+        <div class="product jo">
           <input id="acd-check3" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check3">伊藤 一成 准教授</label>
           <div class="acd-content">
@@ -129,7 +122,7 @@
           </div>
         </div>
 
-        <div class="product" data-product-type="jo">
+        <div class="product jo">
           <input id="acd-check4" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check4">稲積 宏誠 教授</label>
           <div class="acd-content">
@@ -152,7 +145,7 @@
 
 
         </div>
-        <div class="product" data-product-type="ni">
+        <div class="product ni">
 
           <input id="acd-check5" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check5">遠藤 俊典 准教授</label>
@@ -173,7 +166,7 @@
 
 
         </div>
-        <div class="product" data-product-type="ni">
+        <div class="product ni">
 
           <input id="acd-check6" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check6">香川 秀太 准教授</label>
@@ -195,7 +188,7 @@
         </div>
 
 
-        <div class="product" data-product-type="ni">
+        <div class="product ni">
           <input id="acd-check7" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check7">苅宿 俊文 教授</label>
           <div class="acd-content">
@@ -215,7 +208,7 @@
         </div>
 
 
-        <div class="product" data-product-type="ni">
+        <div class="product ni">
 
 
           <input id="acd-check8" class="acd-check" type="checkbox">
@@ -236,7 +229,7 @@
           </div>
 
         </div>
-        <div class="product" data-product-type="ni">
+        <div class="product ni">
 
           <input id="acd-check9" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check9">小池 和彦 教授</label>
@@ -256,7 +249,7 @@
           </div>
 
         </div>
-        <div class="product" data-product-type="ni">
+        <div class="product ni">
 
 
           <input id="acd-check10" class="acd-check" type="checkbox">
@@ -277,7 +270,7 @@
           </div>
 
         </div>
-        <div class="product" data-product-type="ni">
+        <div class="product ni">
 
           <input id="acd-check11" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check11">寺尾 敦 教授</label>
@@ -298,7 +291,7 @@
 
 
         </div>
-        <div class="product" data-product-type="sya">
+        <div class="product sya">
 
           <input id="acd-check12" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check12">長橋 透 教授</label>
@@ -319,7 +312,7 @@
 
 
         </div>
-        <div class="product" data-product-type="sya">
+        <div class="product sya">
 
           <input id="acd-check13" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check13">南部 和香 准教授</label>
@@ -339,7 +332,7 @@
           </div>
 
         </div>
-        <div class="product" data-product-type="sya">
+        <div class="product sya">
 
           <input id="acd-check14" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check14">開澤 栄相 教授</label>
@@ -359,7 +352,7 @@
 
 
         </div>
-        <div class="product" data-product-type="sya">
+        <div class="product sya">
 
           <input id="acd-check15" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check15">伏屋 広隆 准教授</label>
@@ -379,7 +372,7 @@
           </div>
 
         </div>
-        <div class="product" data-product-type="jo">
+        <div class="product jo">
 
           <input id="acd-check16" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check16">松澤 芳昭 准教授</label>
@@ -399,7 +392,7 @@
           </div>
 
         </div>
-        <div class="product" data-product-type="sya">
+        <div class="product sya">
 
           <input id="acd-check17" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check17">皆木 健男 准教授</label>
@@ -419,7 +412,7 @@
           </div>
 
         </div>
-        <div class="product" data-product-type="jo">
+        <div class="product jo">
 
           <input id="acd-check18" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check18">宮川 裕之 教授</label>
@@ -439,7 +432,7 @@
           </div>
 
         </div>
-        <div class="product" data-product-type="jo">
+        <div class="product jo">
 
           <input id="acd-check19" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check19">宮治 裕 教授</label>
@@ -459,7 +452,7 @@
           </div>
 
         </div>
-        <div class="product" data-product-type="jo">
+        <div class="product jo">
 
 
           <input id="acd-check20" class="acd-check" type="checkbox">
@@ -481,7 +474,7 @@
 
 
         </div>
-        <div class="product" data-product-type="sya">
+        <div class="product sya">
 
           <input id="acd-check21" class="acd-check" type="checkbox">
           <label class="acd-label" for="acd-check21">矢野 公一 教授</label>
@@ -503,5 +496,79 @@
       </div>
 
   </body>
+
+  <script>
+    var ni = document.getElementsByClassName("ni");
+    var sya = document.getElementsByClassName("sya");
+    var jo = document.getElementsByClassName("jo");
+    for (var i = 0; i < ni.length; i++) {
+      ni[i].style.display = "block";
+    }
+    for (var i = 0; i < sya.length; i++) {
+      sya[i].style.display = "block";
+    }
+    for (var i = 0; i < jo.length; i++) {
+      jo[i].style.display = "block";
+    }
+    function clickBtnIchiran() {
+      var ni = document.getElementsByClassName("ni");
+      var sya = document.getElementsByClassName("sya");
+      var jo = document.getElementsByClassName("jo");
+      for (var i = 0; i < ni.length; i++) {
+        ni[i].style.display = "block";
+      }
+      for (var i = 0; i < sya.length; i++) {
+        sya[i].style.display = "block";
+      }
+      for (var i = 0; i < jo.length; i++) {
+        jo[i].style.display = "block";
+      }
+
+    }
+    function clickBtnNingen() {
+      for (var i = 0; i < ni.length; i++) {
+        ni[i].style.display = "block";
+      }
+
+      for (var i = 0; i < sya.length; i++) {
+        sya[i].style.display = "none";
+      }
+      for (var i = 0; i < jo.length; i++) {
+        jo[i].style.display = "none";
+      }
+
+    }
+    function clickBtnSyakai() {
+
+      for (var i = 0; i < ni.length; i++) {
+        ni[i].style.display = "none";
+      }
+      for (var i = 0; i < sya.length; i++) {
+        sya[i].style.display = "block";
+      }
+
+      for (var i = 0; i < jo.length; i++) {
+        jo[i].style.display = "none";
+      }
+
+    }
+
+    function clickBtnJouhou() {
+
+      for (var i = 0; i < ni.length; i++) {
+        ni[i].style.display = "none";
+      }
+      for (var i = 0; i < sya.length; i++) {
+        sya[i].style.display = "none";
+      }
+      for (var i = 0; i < jo.length; i++) {
+        jo[i].style.display = "block";
+      }
+
+
+    }
+
+
+  </script>
 
   </html>
