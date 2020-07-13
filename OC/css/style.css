@@ -1215,12 +1215,12 @@ _:-ms-input-placeholder, :root .link_btn{
     transition-duration: 0.5s;
 }
 .OBOG_video {
-    margin:80px 80px;
+    margin:40px 50px;
     background-color:#FFF;
     border:solid 3px #eF9998;
     color:#eF9998;
     height:400px;
-    width:550;
+    width:550px;
 	
 	
 
