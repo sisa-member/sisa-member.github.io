@@ -1219,13 +1219,17 @@ _:-ms-input-placeholder, :root .link_btn{
 	background-color:#FFF;
 	border:solid 3px #eF9998;
 	color:#eF9998;
+	height:400px;
+	width:550;
 	
 	
 
 }
 
-.OBOG_video h3{
+.OBOG_video h1{
 	text-align:center;
+	height:300;
+	width:400;
 	
 
 }
