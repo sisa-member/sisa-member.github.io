@@ -1215,21 +1215,21 @@ _:-ms-input-placeholder, :root .link_btn{
     transition-duration: 0.5s;
 }
 .OBOG_video {
-	margin:80px 80px;
-	background-color:#FFF;
-	border:solid 3px #eF9998;
-	color:#eF9998;
-	height:400px;
-	width:550;
+    margin:80px 80px;
+    background-color:#FFF;
+    border:solid 3px #eF9998;
+    color:#eF9998;
+    height:400px;
+    width:550;
 	
 	
 
 }
 
 .OBOG_video h1{
-	text-align:center;
-	height:300;
-	width:400;
+    text-align:center;
+    height:300;
+    width:400;
 	
 
 }
