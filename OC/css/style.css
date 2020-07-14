@@ -1214,17 +1214,7 @@ _:-ms-input-placeholder, :root .link_btn{
     transform: scale(1.2, 1.2);
     transition-duration: 0.5s;
 }
-.OBOG_video {
-    margin-left:400px;
-    background-color:#FFF;
-    border:solid 3px #eF9998;
-    color:#eF9998;
-    height:300px;
-    width:550px;
-	
-	
 
-}
 
 .OBOG_video p{
     font-size:xx-large;
