@@ -1212,7 +1212,7 @@ _:-ms-input-placeholder, :root .link_btn{
     padding: 25px 20px;
     margin: 0;
     height:380px;
-    font-size: 20px;
+    font-size: 140%;
     border-radius: 0px 0px 18px 18px;
 }
 
