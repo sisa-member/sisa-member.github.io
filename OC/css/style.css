@@ -403,6 +403,20 @@ img {
  font-family: 'M PLUS Rounded 1c', sans-serif;
 
 }
+.title-t {
+  left: 2em;
+  font-weight: bold; /* 太文字 */
+  font-size: 20px;
+  color: #ffffff; /* タイトル文字色 */
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+.title-w {
+  left: 2em;
+  font-weight: bold; /* 太文字 */
+  font-size: 20px;
+  color: #000000; /* タイトル文字色 */
+  font-family: 'M PLUS Rounded 1c', sans-serif; 
+}
 
 .test_logo{
 	display:block;
@@ -1198,7 +1212,7 @@ _:-ms-input-placeholder, :root .link_btn{
     padding: 25px 20px;
     margin: 0;
     height:380px;
-    font-size: 20px;
+    font-size: 140%;
     border-radius: 0px 0px 18px 18px;
 }
 
