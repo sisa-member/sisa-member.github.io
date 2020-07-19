@@ -1231,9 +1231,10 @@ _:-ms-input-placeholder, :root .link_btn{
 
 
 .OBOG_video {
-	margin-left:400px;
+	margin-left:85%px;
 	width:560px;
 	height:350px;
+	
 	
 
 
@@ -1245,7 +1246,7 @@ _:-ms-input-placeholder, :root .link_btn{
     font-size:xx-large;
     text-align:center;
     width:100%;
-    margin-top:100px;
+    margin-top:25%;
     color:#eF9998;
 	
 
