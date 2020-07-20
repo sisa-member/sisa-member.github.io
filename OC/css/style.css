@@ -1235,12 +1235,6 @@ _:-ms-input-placeholder, :root .link_btn{
 	width:560px;
 	height:350px;
 	text-align:center;
-	
-	
-	
-	
-
-
 
 }
 
@@ -1251,6 +1245,13 @@ _:-ms-input-placeholder, :root .link_btn{
     width:100%;
     margin-top:25%;
     color:#eF9998;
+
+
+}
+.sign{
+	border:solid 5px #ef9998 ;
+	background-color:#FFF;
+	font-size:xx-large;
 	
 
 }
