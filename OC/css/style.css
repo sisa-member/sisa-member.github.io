@@ -1247,6 +1247,15 @@ _:-ms-input-placeholder, :root .link_btn{
 
 
 }
+#comeson{
+    margin-buttom:50%;
+    font-size:xx-large;
+    text-align:center;
+    width:100%;
+    margin-top:15%;
+    color:#eF9998;
+    border:dotted 5px #FFFFFF;
+}
 
 
 
