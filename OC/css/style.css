@@ -1252,7 +1252,8 @@ _:-ms-input-placeholder, :root .link_btn{
     font-size:xx-large;
     text-align:center;
     width:24%;
-    margin:40%;
+    margin-left:40%;
+    margin-top:15%;
     color:#eF9998;
     border-bottom:dotted 5px #FFF;
     
