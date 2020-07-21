@@ -1149,7 +1149,7 @@ _:-ms-input-placeholder, :root .link_btn{
   }
   
   .ribbon3 h3 {
-    font-size:150%;
+    font-size:125%;
     margin: 0;
     padding: 0 30px;
     border-top: dashed 2px #ef9998;
@@ -1184,6 +1184,7 @@ _:-ms-input-placeholder, :root .link_btn{
   }
 
 .box00s {
+    background-color: white;
     margin: 50px 30px;
     border: solid 3px #ef9998;
     border-radius: 20px;
@@ -1212,8 +1213,9 @@ _:-ms-input-placeholder, :root .link_btn{
     padding: 25px 20px;
     margin: 0;
     height:380px;
-    font-size: 140%;
+    font-size: 20px;
     border-radius: 0px 0px 18px 18px;
+    overflow-y: scroll;
 }
 
 .fade_in {
