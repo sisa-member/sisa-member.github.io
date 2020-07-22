@@ -291,11 +291,16 @@ img {
 	margin-left: 4%;
 	margin-right: 4%;
 	margin-bottom: 40px;
+	display: flex;
+        height: auto;
+        align-items: flex-start;
+
 	/* margin-left: 13%;
 	margin-right: auto;
 	heigth:500px;
 	width: 500px;
 	text-align: center;
+	
 */
 }
 
