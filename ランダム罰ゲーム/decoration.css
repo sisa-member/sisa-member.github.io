@@ -1,0 +1,10 @@
+#bb{
+	color: #2f0642;
+	background-color: #c973c9;
+    border-radius: 500vh;
+    text-align: center
+}
+
+input{
+    font-size:150%;
+}

@@ -1,0 +1,53 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="decoration.css">
+    <title>学生入力フォーム</title>
+</head>
+
+<body>
+    <h2>罰ゲームリスト</h2>
+    <br>
+    <div id="list"></div>
+    <br>
+    <input id="bb" type="button" value="☠️" onclick="getPanishment(panishment_array)" class="button" style="width:70px;height:70px">
+    <br>
+    <br>
+    <div id="result"></div>
+    <script type="text/javascript">
+        var panishment_array = ['変顔の写真を撮る', 'イーゴ君と集合写真を撮ってくる(オンラインはイーゴ君の写真を載せる)', 'ぴえんの写真を撮る', 'とびっきりかわいいポーズの写真を撮る', '指ハートの写真を撮る'];
+        var colors = ["red", "purple", "blue", "pink", "green"]
+        var getPanishment = function (panishment_array) {
+            var panish = Math.floor(Math.random() * 5);
+            var color = colors[panish]
+            var panishment = '<span style="border-bottom: solid 3px ' +  color + ';">'
+            panishment += panishment_array[panish];
+            panishment += '</span>'
+            document.getElementById('result').innerHTML = panishment;
+        }
+
+        
+
+        var str = '';
+        str += '<table>'
+        var len = panishment_array.length;
+        for (var i = 0; i < len; i++) {
+            var panishment = panishment_array[i];
+            var color = colors[i]
+            str += '<tr>';
+                str += '<td>';
+                str += '<span style="border-bottom: solid 3px ' +  color + ';">'
+                str += i+1
+                str += ". "
+                str += panishment;
+                str += '</span>'
+                str += '</td>';
+            str += '</tr>';
+        }
+        str += '</table>'
+        document.getElementById('list').innerHTML = str;
+    </script>
+</body>
+
+</html>
