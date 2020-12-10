@@ -10,14 +10,21 @@
     <span style="font-size: 55px;">残念！不正解🥺</span>
     <br>
     <br>
+    <br>
+    <br>
     <span style="font-size: 50px;">罰ゲームリスト</span>
     <br>
+    <br>
+    <br>
     <div id="list"></div>
+    <br>
+    <br>
     <br>
     <div>
         <input id="bb" type="button" value="☠️" onclick="getPanishment(panishment_array)" class="button" style="width:150px;height:150px">
     <span　style="font-size: 100px;">←ここを押してね！！</span　style="font-size: 50px;">
-    <div>
+    </div>
+    <br>
     <br>
     <br>
     <div id="result"></div>
@@ -50,6 +57,7 @@
                 str += '</span>'
                 str += '</td>';
             str += '</tr>';
+            str += '<tr><td></td></tr><tr><td></td></tr><tr><td></td></tr><tr><td></td></tr>';
         }
         str += '</table>'
         document.getElementById('list').innerHTML = str;
