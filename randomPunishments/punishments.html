@@ -22,7 +22,7 @@
         var getPanishment = function (panishment_array) {
             var panish = Math.floor(Math.random() * 5);
             var color = colors[panish]
-            var panishment = '<span style="border-bottom: solid 3px ' +  color + ';">'
+            var panishment = '<span style="font-size: 40px; border-bottom: solid 3px ' +  color + ';">'
             panishment += panishment_array[panish];
             panishment += '</span>'
             document.getElementById('result').innerHTML = panishment;
@@ -38,7 +38,7 @@
             var color = colors[i]
             str += '<tr>';
                 str += '<td>';
-                str += '<span style="border-bottom: solid 3px ' +  color + ';">'
+                str += '<span style="font-size: 40px; border-bottom: solid 3px ' +  color + ';">'
                 str += i+1
                 str += ". "
                 str += panishment;
