@@ -1564,6 +1564,7 @@
 <script>
 
     function radioDeselection() {
+        window.location.reload();
         document.getElementById("time_table").style.display="none";
         for (const element of document.getElementsByName('select_class')) {
             element.checked = false;
