@@ -268,11 +268,13 @@ img {
 
 }
 
-
+.photo {
+	margin-top: 50px;
+}
 
 .photo img{
 	/* display: inline; */
-	margin:2%;
+	margin:1.5%;
 	width: 46%;
 	text-align: center;
 }
@@ -292,8 +294,8 @@ img {
 	margin-right: 4%;
 	margin-bottom: 40px;
 	display: flex;
-        height: auto;
-        align-items: flex-start;
+    height: auto;
+    align-items: flex-start;
 
 	/* margin-left: 13%;
 	margin-right: auto;
@@ -1484,4 +1486,182 @@ _:-ms-input-placeholder, :root .link_btn{
 		 
 		
 		
-		
+.schedule__sort {
+	display: flex;
+  }
+  .schedule__sort0 {
+	  font-family: 'M PLUS Rounded 1c', sans-serif;
+	  display: flex;
+	  flex-flow: wrap;
+	  display: block;	/* ブロックレベル要素化する */
+	 
+	  width: 80%;	/* ボックスの横幅を指定する */
+	  height: 50px;	/* ボックスの高さを指定する */
+	  padding-left: auto;	/* ボックス内左側の余白を指定する */
+	  padding-right: auto;	/* ボックス内御右側の余白を指定する */
+	  color: #000;	/* フォントの色を指定 */
+	  text-align: center;	/* テキストのセンタリングを指定する */
+	  line-height: 45px;	/* 行の高さを指定する */
+	  cursor: pointer;	/* マウスカーソルの形（リンクカーソル）を指定する */
+	  border: 2px solid #fff;/* ボックスの境界線を実線で指定する */
+	  border-radius: 5px;	/* 角丸を指定する */
+	  margin-left: 10%;
+	  background: lightgray;
+	  font-size: 15px;
+  }
+  
+  .schedule__sort1 {
+	  font-family: 'M PLUS Rounded 1c', sans-serif;
+	  display: flex;
+	  flex-flow: wrap;
+	  display: block;	/* ブロックレベル要素化する */
+	 
+	  width: 25%;	/* ボックスの横幅を指定する */
+	  height: 50px;	/* ボックスの高さを指定する */
+	  padding-left: auto;	/* ボックス内左側の余白を指定する */
+	  padding-right: auto;	/* ボックス内御右側の余白を指定する */
+	  color: #000;	/* フォントの色を指定 */
+	  text-align: center;	/* テキストのセンタリングを指定する */
+	  line-height: 45px;	/* 行の高さを指定する */
+	  cursor: pointer;	/* マウスカーソルの形（リンクカーソル）を指定する */
+	  border: 2px solid #fff;/* ボックスの境界線を実線で指定する */
+	  border-radius: 5px;	/* 角丸を指定する */
+	  background: #99D3D3;
+	  margin-left: 10%;
+	  margin-right: 2.5%;
+	  font-size: 15px;
+  }
+  
+  
+  .schedule__sort2 {
+	  font-family: 'M PLUS Rounded 1c', sans-serif;
+	  display: flex;
+	  flex-flow: wrap;
+	  display: block;	/* ブロックレベル要素化する */
+	  
+	  width: 25%;	/* ボックスの横幅を指定する */
+	  height: 50px;	/* ボックスの高さを指定する */
+	  padding-left: auto;	/* ボックス内左側の余白を指定する */
+	  padding-right: auto;	/* ボックス内御右側の余白を指定する */
+	  color: #000;	/* フォントの色を指定 */
+	  text-align: center;	/* テキストのセンタリングを指定する */
+	  line-height: 45px;	/* 行の高さを指定する */
+	  cursor: pointer;	/* マウスカーソルの形（リンクカーソル）を指定する */
+	  border: 2px solid #fff;/* ボックスの境界線を実線で指定する */
+	  border-radius: 5px;	/* 角丸を指定する */
+	  background: 	 #FEB1C6;
+		  font-size: 15px;
+		  margin-right: 2.5%;
+  }
+  
+  .schedule__sort3 {
+	  font-family: 'M PLUS Rounded 1c', sans-serif;
+	  display: flex;
+	  flex-flow: wrap;
+	  display: block;	/* ブロックレベル要素化する */
+	  width: 25%;	/* ボックスの横幅を指定する */
+	  height: 50px;	/* ボックスの高さを指定する */
+	  padding-left: auto;	/* ボックス内左側の余白を指定する */
+	  padding-right: auto;	/* ボックス内御右側の余白を指定する */
+	  color: #000;	/* フォントの色を指定 */
+	  text-align: center;	/* テキストのセンタリングを指定する */
+	  line-height: 45px;	/* 行の高さを指定する */
+	  cursor: pointer;	/* マウスカーソルの形（リンクカーソル）を指定する */
+	  border: 2px solid #fff;/* ボックスの境界線を実線で指定する */
+	  border-radius: 5px;	/* 角丸を指定する */
+	  margin-right: auto;
+	  background: 	  #FFE077;
+	  font-size: 15px;
+  }
+  .schedule__sort4 {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	display: flex;
+	flex-flow: wrap;
+	display: block;	/* ブロックレベル要素化する */
+	
+	width: 18%;	/* ボックスの横幅を指定する */
+	height: 50px;	/* ボックスの高さを指定する */
+	padding-left: auto;	/* ボックス内左側の余白を指定する */
+	padding-right: auto;	/* ボックス内御右側の余白を指定する */
+	color: #000;	/* フォントの色を指定 */
+	text-align: center;	/* テキストのセンタリングを指定する */
+	line-height: 45px;	/* 行の高さを指定する */
+	cursor: pointer;	/* マウスカーソルの形（リンクカーソル）を指定する */
+	border: 2px solid #fff;/* ボックスの境界線を実線で指定する */
+	border-radius: 5px;	/* 角丸を指定する */
+	background: lightgray;
+	margin-left: 10%;
+	margin-right: 2.6%;
+	font-size: 15px;
+}
+
+
+.schedule__sort5 {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	display: flex;
+	flex-flow: wrap;
+	display: block;	/* ブロックレベル要素化する */
+	
+	width: 18%;	/* ボックスの横幅を指定する */
+	height: 50px;	/* ボックスの高さを指定する */
+	padding-left: auto;	/* ボックス内左側の余白を指定する */
+	padding-right: auto;	/* ボックス内御右側の余白を指定する */
+	color: #000;	/* フォントの色を指定 */
+	text-align: center;	/* テキストのセンタリングを指定する */
+	line-height: 45px;	/* 行の高さを指定する */
+	cursor: pointer;	/* マウスカーソルの形（リンクカーソル）を指定する */
+	border: 2px solid #fff;/* ボックスの境界線を実線で指定する */
+	border-radius: 5px;	/* 角丸を指定する */
+	background: 	  lightgray;
+		font-size: 15px;
+		margin-right: 2.6%;
+}
+.schedule__sort6 {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	display: flex;
+	flex-flow: wrap;
+	display: block;	/* ブロックレベル要素化する */
+	
+	width: 18%;	/* ボックスの横幅を指定する */
+	height: 50px;	/* ボックスの高さを指定する */
+	padding-left: auto;	/* ボックス内左側の余白を指定する */
+	padding-right: auto;	/* ボックス内御右側の余白を指定する */
+	color: #000;	/* フォントの色を指定 */
+	text-align: center;	/* テキストのセンタリングを指定する */
+	line-height: 45px;	/* 行の高さを指定する */
+	cursor: pointer;	/* マウスカーソルの形（リンクカーソル）を指定する */
+	border: 2px solid #fff;/* ボックスの境界線を実線で指定する */
+	border-radius: 5px;	/* 角丸を指定する */
+	background: lightgray;
+	font-size: 15px;
+	margin-right: 2.6%;
+}
+
+
+.schedule__sort7 {
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+	display: flex;
+	flex-flow: wrap;
+	display: block;	/* ブロックレベル要素化する */
+	
+	width: 18%;	/* ボックスの横幅を指定する */
+	height: 50px;	/* ボックスの高さを指定する */
+	padding-left: auto;	/* ボックス内左側の余白を指定する */
+	padding-right: auto;	/* ボックス内御右側の余白を指定する */
+	color: #000;	/* フォントの色を指定 */
+	text-align: center;	/* テキストのセンタリングを指定する */
+	line-height: 45px;	/* 行の高さを指定する */
+	cursor: pointer;	/* マウスカーソルの形（リンクカーソル）を指定する */
+	border: 2px solid #fff;/* ボックスの境界線を実線で指定する */
+	border-radius: 5px;	/* 角丸を指定する */
+	background: 	  lightgray;
+		font-size: 15px;
+		margin-right: auto;
+}
+
+.scedule-title {
+	font-size: 25px;
+	margin: 40px 0 10px 0;
+	text-align: center;
+	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
