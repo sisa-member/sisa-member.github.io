@@ -60,30 +60,56 @@
   
   <body>
     <br><br><br><br><br><br>
-    <image src="image/composition.png"/><br><br><br><br>
+    
+    
+      <h1 class="scedule-title">▼すべての時間割をみる▼</h1>
+      <div class="schedule__sort">
+        <input type="button" class="schedule__sort0" value="一覧" onclick="clickBtnIchiran()">
+      </div>
+      <h1 class="scedule-title">▼選択コースで選ぶ▼</h1>
+      <div class="schedule__sort">
+        
+        <input type="button" class="schedule__sort1" value="社会・情報コース" onclick="clickBtnSyajo()">
+        <input type="button" class="schedule__sort2" value="社会・人間コース" onclick="clickBtnSyanin()">
+        <input type="button" class="schedule__sort3" value="人間・情報コース" onclick="clickBtnNinjo()">
+      </div>
+      <h1 class="scedule-title">▼学年で選ぶ▼</h1>
+      <div class="schedule__sort">
+        <input type="button" class="schedule__sort4" value="1年" onclick="clickBtnOne()">
+        <input type="button" class="schedule__sort5" value="2年" onclick="clickBtnTwo()">
+        <input type="button" class="schedule__sort6" value="3年" onclick="clickBtnThree()">
+        <input type="button" class="schedule__sort7" value="4年" onclick="clickBtnFour()">
+      </div>
+
+
+    
     <div class="photo">
-        <div class="schedule_display fade_in">
-          <image src="image/1.png" class="image-hover"/>         
-           <image src="image/2.png" class="image-hover"/>
+        <div class="schedule_display fade_in three syajo">
+          <image src="image/3_SJ_1.png" class="image-hover"/>         
+          <image src="image/3_SJ_2.png" class="image-hover"/>
         </div>
-        <div class="schedule_display  fade_in">
-            <image src="image/3.png" class="image-hover" />   
-            <image src="image/syajou20.png" class="image-hover" />
+        <div class="schedule_display fade_in three syanin">
+            <image src="image/3_NS_1.png" class="image-hover" />   
+            <image src="image/3_NS_2.png" class="image-hover" />
          </div>
      
-        <div class="schedule_display  fade_in">         
-            <image src="image/ninjou20.png" class="image-hover"/>
-            <image src="image/syanin20.png" class="image-hover"/>
+        <div class="schedule_display fade_in three ninjo">         
+            <image src="image/3_NJ_1.png" class="image-hover"/>
+            <image src="image/3_NJ_1.png" class="image-hover"/>
         </div>
-      
-        <div class="schedule_display  fade_in">        
-            <image src="image/syajou-2.png" class="image-hover" />
-            <image src="image/時間割(2年人間・情報).png" class="image-hover"/>
+        <div class="schedule_display fade_in four syajo">
+          <image src="image/4_SJ_1.png" class="image-hover"/>         
+           <image src="image/4_SJ_2.png" class="image-hover"/>
         </div>
-
+        <div class="schedule_display fade_in four syanin">
+            <image src="image/4_NS_1.png" class="image-hover" />   
+            <image src="image/4_NS_2.png" class="image-hover" />
+         </div>
      
-      
-     
+        <div class="schedule_display fade_in four ninjo">         
+            <image src="image/4_NJ_1.png" class="image-hover"/>
+            <image src="image/4_NJ_2.png" class="image-hover"/>
+        </div>      
     </div>  
     <!--
     <div class="lab_contents" style="text-align:center;font-size:50px;"><a href="http://syllabus.aoyama.ac.jp/">気になる授業を検索する</a>←クリック！！</div>
@@ -104,6 +130,142 @@
       }
     }
   })
+    var one = document.getElementsByClassName("one");
+    var two = document.getElementsByClassName("two");
+    var three = document.getElementsByClassName("three");
+    var four = document.getElementsByClassName("four");
+
+    var syajo = document.getElementsByClassName("syajo");
+    var syanin = document.getElementsByClassName("syanin");
+    var ninjo = document.getElementsByClassName("ninjo");
+    for (var i = 0; i < syajo.length; i++) {
+      syajo[i].style.display = "block";
+    }
+    for (var i = 0; i < syanin.length; i++) {
+      syanin[i].style.display = "block";
+    }
+    for (var i = 0; i < ninjo.length; i++) {
+      ninjo[i].style.display = "block";
+    }
+    function clickBtnIchiran() {
+      var one = document.getElementsByClassName("one");
+      var two = document.getElementsByClassName("two");
+      var three = document.getElementsByClassName("three");
+      var four = document.getElementsByClassName("four");
+      var syajo = document.getElementsByClassName("syajo");
+      var syanin = document.getElementsByClassName("syanin");
+      var ninjo = document.getElementsByClassName("ninjo");
+      for (var i = 0; i < one.length; i++) {
+        one[i].style.display = "block";
+      }
+      for (var i = 0; i < two.length; i++) {
+        two[i].style.display = "block";
+      }
+      for (var i = 0; i < three.length; i++) {
+        three[i].style.display = "block";
+      }
+      for (var i = 0; i < four.length; i++) {
+        four[i].style.display = "block";
+      }
+      for (var i = 0; i < syajo.length; i++) {
+        syajo[i].style.display = "block";
+      }
+      for (var i = 0; i < syanin.length; i++) {
+        syanin[i].style.display = "block";
+      }
+      for (var i = 0; i < ninjo.length; i++) {
+        ninjo[i].style.display = "block";
+      }
+    }
+    function clickBtnSyajo() {
+      for (var i = 0; i < syajo.length; i++) {
+        syajo[i].style.display = "block";
+      }
+      for (var i = 0; i < syanin.length; i++) {
+        syanin[i].style.display = "none";
+      }
+      for (var i = 0; i < ninjo.length; i++) {
+        ninjo[i].style.display = "none";
+      }
+    }
+    function clickBtnSyanin() {
+      for (var i = 0; i < syajo.length; i++) {
+        syajo[i].style.display = "none";
+      }
+      for (var i = 0; i < syanin.length; i++) {
+        syanin[i].style.display = "block";
+      }
+      for (var i = 0; i < ninjo.length; i++) {
+        ninjo[i].style.display = "none";
+      }
+    }
+    function clickBtnNinjo() {
+      for (var i = 0; i < syajo.length; i++) {
+        syajo[i].style.display = "none";
+      }
+      for (var i = 0; i < syanin.length; i++) {
+        syanin[i].style.display = "none";
+      }
+      for (var i = 0; i < ninjo.length; i++) {
+        ninjo[i].style.display = "block";
+      }
+    }
+    function clickBtnOne() {
+      for (var i = 0; i < one.length; i++) {
+        one[i].style.display = "block";
+      }
+      for (var i = 0; i < two.length; i++) {
+        two[i].style.display = "none";
+      }
+      for (var i = 0; i < three.length; i++) {
+        three[i].style.display = "none";
+      }
+      for (var i = 0; i < four.length; i++) {
+        four[i].style.display = "none";
+      }    
+    }
+    function clickBtnTwo() {
+      for (var i = 0; i < one.length; i++) {
+        one[i].style.display = "none";
+      }
+      for (var i = 0; i < two.length; i++) {
+        two[i].style.display = "block";
+      }
+      for (var i = 0; i < three.length; i++) {
+        three[i].style.display = "none";
+      }
+      for (var i = 0; i < four.length; i++) {
+        four[i].style.display = "none";
+      }    
+    }
+    function clickBtnThree() {
+      for (var i = 0; i < one.length; i++) {
+        one[i].style.display = "none";
+      }
+      for (var i = 0; i < two.length; i++) {
+        two[i].style.display = "none";
+      }
+      for (var i = 0; i < three.length; i++) {
+        three[i].style.display = "block";
+      }
+      for (var i = 0; i < four.length; i++) {
+        four[i].style.display = "none";
+      }    
+    }
+    function clickBtnFour() {
+      for (var i = 0; i < one.length; i++) {
+        one[i].style.display = "none";
+      }
+      for (var i = 0; i < two.length; i++) {
+        two[i].style.display = "none";
+      }
+      for (var i = 0; i < three.length; i++) {
+        three[i].style.display = "none";
+      }
+      for (var i = 0; i < four.length; i++) {
+        four[i].style.display = "block";
+      }    
+    }
   </script>
 
 </html>
