@@ -530,7 +530,8 @@ body {
 	font: normal normal normal 62.5%/1 "GENJ", "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro",  "メイリオ", Meiryo, "ＭＳ Ｐゴシック", 'Open Sans', osaka, Arial, Verdana, sans-serif;
 	padding: 0;
 	background-color: #fff;
-	background-color: rgb(0, 0, 0);
+	background-color: rgb(255, 250, 240);
+	/* ここ */
 	position: relative;
 	color: #333;
 	text-rendering: optimizeLegibility;
@@ -652,7 +653,8 @@ font-family: 'Bungee Inline', cursive;
 	z-index:500;
 	width:100%;
 	background:url(../image/header_image.png) top center repeat-x;
-    background-color: rgba(255,250,240,1);
+    background-color: #EB6661;
+	/* ここ */
 }
 
 #header:after{
@@ -701,11 +703,11 @@ font-family: 'Bungee Inline', cursive;
 
 .header_link .header_link_HP.link01{
     right:145px;
-    background:linear-gradient(#cd5c5c 30%, #f7d3d3 100%);
+    background:rgba(254, 177, 198, 1);
 }
 .header_link .header_link_HP.link02{
     right:0px;
-    background:linear-gradient(#cd5c5c 30%, #f7d3d3 100%);
+    background:rgba(153, 211, 211, 1);
 }
 
 #header .header_image{
@@ -746,7 +748,8 @@ font-family: 'Bungee Inline', cursive;
     #header{
         background:url(../image/reesu.png) top center repeat-x;
         background-size:728px 34px;
-        background-color: rgba(255,250,240,1);
+        background-color: #EB6661;
+		/* ここ */
     }
     #header:after{
         bottom:-8px;height:8px;width:100%;
@@ -804,6 +807,7 @@ width:162px;
 #header_list ul li a{
     display:block;
     color:black;
+	/* ここ */
     padding-top:67px;
 	font-family: 'M PLUS Rounded 1c', sans-serif;
 }
@@ -849,7 +853,8 @@ width:162px;
 #header_list ul .header_menu_list span{
 	font-size:9px;
 	font-weight:900;
-	color:#f3aaa9;
+	color:rgb(254, 177, 198);
+	/* ここ */
 	text-transform: uppercase;
 }
 
@@ -875,7 +880,7 @@ width:162px;
 	}
 #header_list ul .logo img{
 	width:195px;
-	margin-bottom:11px;
+	margin-top:40px;
 	}
 
 
@@ -949,7 +954,8 @@ width:162px;
 
 .about_menu .about_box{
 	font-family: 'M PLUS Rounded 1c', sans-serif;
-	width:calc(100% - 30px);
+	width:15%;
+	height: 300px;
 	max-width:1300px;
 	position:relative;
 	-moz-border-radius: 10px;
@@ -973,7 +979,7 @@ width:162px;
 	z-index:100;
 	}
 .about_menu .about_box .bfbox{
-	width:19%;
+	width:100%;
 	display:block;
 	position:relative;
 	}
@@ -998,7 +1004,7 @@ width:162px;
 
 .about_menu .about_box .bfbox h2{
 	font-size:18px;color:#0d6fb8;font-weight:700;
-	margin:40px 0 12px;
+	margin:8px 0 12px;
 	text-align:center;
 	}
 
@@ -1266,6 +1272,21 @@ _:-ms-input-placeholder, :root .link_btn{
     
 } 
 
+
+
+
+/* 
+@media screen and (max-width: 899px){
+	.instagram-media{
+	  width:400px !important;
+	  max-width: 100% !important;
+	  min-width: initial !important;
+	}
+	iframe{
+		width: 90%;
+	}
+  } */
+
 .home-title {
 	color:#FFFAF0; 
 	font-size:40px; 
@@ -1409,8 +1430,6 @@ _:-ms-input-placeholder, :root .link_btn{
     padding: 0.2em 1.0em;
     margin: 2em 0 2em 3.5%;
     color: #565656;
-    background: #FFFAF0;
-    box-shadow: 0px 0px 0px 10px #FFFAF0;
     /* border: dashed 2px #C22E7D; */
     border-radius: 8px;
 	width: 11%;
@@ -1422,6 +1441,15 @@ _:-ms-input-placeholder, :root .link_btn{
 	-o-transition: transform 0.5s ease;
 	transition: transform 0.5s ease;
 }
+.home-pink {
+    background: rgba(254, 177, 198, 0.5);
+    box-shadow: 0px 0px 0px 10px rgba(254, 177, 198, 0.5);
+}
+.home-blue {
+    background: rgba(153, 211, 211, 0.5);
+    box-shadow: 0px 0px 0px 10px rgba(153, 211, 211, 0.5);
+}
+
 .home-menu p{
 	font-size:14px;
 	line-height:22px;
@@ -1453,3 +1481,7 @@ _:-ms-input-placeholder, :root .link_btn{
 .home-menu:hover {
 	transform: scale3d(1.1, 1.1, 1.1);
 }
+		 
+		
+		
+		
