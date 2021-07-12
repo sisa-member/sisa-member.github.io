@@ -448,7 +448,7 @@ z-index:9998;
 }
 
 .class_a h1{
-	color: white;
+	color: black;
 	font-size:40px;
 	padding: 0 0 20px 0;
 	font-family: 'M PLUS Rounded 1c', sans-serif;
@@ -907,13 +907,13 @@ width:162px;
 
 
 
-#header_list ul .menu01:after{width:55px;height:56px;background:url(../image/gakubu.png); background-size:cover; top:0px}
-#header_list ul .menu02:after{width:80px;height:46px;background:url(../image/syusyoku.png); background-size:cover;}
-#header_list ul .menu03:after{width:75px;height:48px;background:url(../image/zemi.png); background-size:cover;}
-#header_list ul .menu04:after{width:53px;height:50px;background:url(../image/jikan.png); background-size:cover; top:8px}
-#header_list ul .menu05:after{width:65px;height:57px;background:url(../image/neko.png); background-size:cover; top:2px;}
-#header_list ul .menu06:after{width:57px;height:52px;background:url(../image/sotsugyou.png); background-size:cover;}
-
+	#header_list ul .menu01:after{width:55px;height:55px;background:url(../image/gakubu.png); background-size:cover; top:0px}
+	#header_list ul .menu02:after{width:55px;height:55px;background:url(../image/syusyoku.png); background-size:cover;}
+	#header_list ul .menu03:after{width:55px;height:55px;background:url(../image/zemi.png); background-size:cover;}
+	#header_list ul .menu04:after{width:55px;height:55px;background:url(../image/jikan.png); background-size:cover; top:8px}
+	#header_list ul .menu05:after{width:55px;height:55px;background:url(../image/neko.png); background-size:cover; top:2px;}
+	#header_list ul .menu06:after{width:55px;height:55px;background:url(../image/sotsugyou.png); background-size:cover;}
+	
 
 
 /* ここまでOK */
@@ -1442,7 +1442,14 @@ _:-ms-input-placeholder, :root .link_btn{
 	-moz-transition: transform 0.5s ease;
 	-o-transition: transform 0.5s ease;
 	transition: transform 0.5s ease;
-}
+	-ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  /* Chrome, Safari 対応 */
+  .home-menu::-webkit-scrollbar {
+    display:none;
+  }
+
 .home-pink {
     background: rgba(254, 177, 198, 0.5);
     box-shadow: 0px 0px 0px 10px rgba(254, 177, 198, 0.5);
@@ -1453,7 +1460,7 @@ _:-ms-input-placeholder, :root .link_btn{
 }
 
 .home-menu p{
-	font-size:14px;
+	font-size:12px;
 	line-height:22px;
 	width:calc(100% - 10px);
 	padding-left:10px;
@@ -1461,6 +1468,7 @@ _:-ms-input-placeholder, :root .link_btn{
 	color:#333;
 	font-family: 'M PLUS Rounded 1c', sans-serif;
 }
+
 .home-menu .bfbox .img_area .img_inr{
 	-moz-border-radius: 10px;
 	-webkit-border-radius: 10px;
@@ -1478,13 +1486,23 @@ _:-ms-input-placeholder, :root .link_btn{
 	font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 .home-menu  img{
-	height: 130px;
+	width: 80%;
+	margin: 0 10%;
 }
 .home-menu:hover {
 	transform: scale3d(1.1, 1.1, 1.1);
 }
 		 
-		
+@media screen and (max-width: 1000px) {
+	.home-menu p{
+	  width:100%;
+	  padding-left:0px;
+	  font-size:10px;
+	}
+	.home-menu  h2{
+		font-size:14px;
+	}
+}
 		
 .schedule__sort {
 	display: flex;
@@ -1664,4 +1682,10 @@ _:-ms-input-placeholder, :root .link_btn{
 	margin: 40px 0 10px 0;
 	text-align: center;
 	font-family: 'M PLUS Rounded 1c', sans-serif;
+}
+
+footer {
+	margin-top: 100px;
+	height: 100px;
+	background-color: #EB6661;
 }
