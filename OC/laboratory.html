@@ -1,493 +1,509 @@
 <!DOCTYPE html>
 
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <title>社会情報学部オープンキャンパス</title>
   <link rel="stylesheet" media="all" type="text/css" href="css/style.css">
 
-  <!-- 使用フォントを登録 -->
+  <!-- 使用フォント を登録 -->
   <link href="https://fonts.googleapis.com/css?family=Lato:400、700、900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Bungee+Inline&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=M+PLUS+Rounded+1c:500&display=swap" rel="stylesheet">
-  <!-- Global site tag (gtag.js) - Google Analytics -->
+
+  <!-- Google Analytics を登録-->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174180823-1"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+    function gtag() { dataLayer.push(arguments); }
     gtag('js', new Date());
-
     gtag('config', 'UA-174180823-1');
   </script>
-  <!-- 写真スライドショー -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-      $('.slider').bxSlider({
-        auto: true,
-        pause: 5000,
-      });
-    });
-  </script>
 </head>
 
+<header id="header">
+  <div class="header_link">
+    <a href="https://www.aoyama.ac.jp/" target="_blank" class="header_link_HP link01 header_menu">青山学院HP</span></a>
+    <a href="http://www.si.aoyama.ac.jp/" target="_blank" class="header_link_HP link02 header_menu">社会情報HP</span></a>
+    <div class="header_image">
+      <a href="home.html"><img src="image/chapel.png" class="logo_illust" alt="社会情報学部イメージイラスト"></a>
+    </div>
+    <div id="header_list">
+      <ul class="header_menu">
+        <li class="menu01 header_menu_list">
+          <a href="about.html">学部紹介<br><span class="en">about</span></a>
+        </li>
+        <li class="menu02 header_menu_list">
+          <a href="class.html">授業紹介<br><span class="en">class</span></a>
+        </li>
+        <li class="menu03 header_menu_list">
+          <a href="laboratory.html">研究室紹介<br><span class="en">laboratory</span></a>
+        </li>
+        <li class="logo">
+          <a href="home.html">
+            <h1><img src="image/new_logo.png" alt="社会情報学部" /></h1>
+            <span class="en">Social Informatics Student Association</span>
+          </a>
+        </li>
+        <li class="menu04 header_menu_list">
+          <a href="schedule.html">時間割紹介<br><span class="en">schedule</span></a>
+        </li>
+        <li class="menu05 header_menu_list">
+          <a href="works.html">作品紹介<br><span class="en">works</span></a>
+        </li>
+        <li class="menu06 header_menu_list">
+          <a href="voice.html">卒業生の声<br><span class="en">voice</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
 <body>
-    <header id="header">
-        <div class="header_link">
-            <a href="https://www.aoyama.ac.jp/" target="_blank"
-                class="header_link_HP link01 header_menu">青山学院HP</span></a>
-            <a href="http://www.si.aoyama.ac.jp/" target="_blank"
-                class="header_link_HP link02 header_menu">社会情報HP</span></a>
-            <div class="header_image">
-                <a href="home.html"><img src="image/chapel.png" class="logo_illust" alt="社会情報学部イメージイラスト"></a>
-            </div>
-            <div id="header_list">
-                <ul class="header_menu">
-                    <li class="menu01 header_menu_list">
-                        <a href="about.html">学部紹介<br><span class="en">about</span></a>
-                    </li>
-                    <li class="menu02 header_menu_list">
-                        <a href="class.html">授業紹介<br><span class="en">class</span></a>
-                    </li>
-                    <li class="menu03 header_menu_list">
-                        <a href="laboratory.html">研究室紹介<br><span class="en">laboratory</span></a>
-                    </li>
-                    <li class="logo">
-                        <a href="home.html">
-                            <h1><img src="image/new_logo.png" alt="社会情報学部" /></h1>
-                            <span class="en">School of Social Informatics</span>
-                        </a>
-                    </li>
-                    <li class="menu04 header_menu_list">
-                        <a href="schedule.html">時間割紹介<br><span class="en">schedule</span></a>
-                    </li>
-                    <li class="menu05 header_menu_list">
-                        <a href="works.html">作品紹介<br><span class="en">works</span></a>
-                    </li>
-                    <li class="menu06 header_menu_list">
-                        <a href="voice.html">卒業生の声<br><span class="en">voice</span></a>
-                    </li>
-                </ul>
-            </div>
+  <br><br><br><br>
+  <div class="products">
+    <div class="products__sort">
+      <input type="button" class="products__sort0" value="一覧" onclick="clickBtnIchiran()">
+      <input type="button" class="products__sort1" value="人間" onclick="clickBtnNingen()">
+      <input type="button" class="products__sort2" value="社会" onclick="clickBtnSyakai()">
+      <input type="button" class="products__sort3" value="情報" onclick="clickBtnJouhou()">
+    </div>
+    <div style="text-align:center;font-size:15px;margin-top:10px;">
+      <span style="font-size:30px;vertical-align: middle;"><i class="zmdi zmdi-youtube-play"></i></span>・・・紹介動画あり
+    </div>
+
+
+    <div class="products__wrap">
+
+      <div class="product jo">
+        <input id="acd-check1" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check1">飯島 泰裕 教授　<i class="zmdi zmdi-youtube-play"></i></label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">O221</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">ICTによるコミュニテイ活性化の政策とビジネス</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            本格的な情報社会時代へ向けて、日本や世界の先進事例を調査しながら、行政政策やICTビジネスを、企業や行政と協力して実践的に研究
+            する。つまり、情報収集、情報解析、プレゼンテーションを行い、戦略的な政策形成やビジネスプランを開発、試作する。ゼミ(ゼミナールI、II、卒業研究I、II)では、デジタルサイネージ、360度映像、SNS、Project
+            based learning(PBL)等の研究している。新たに、家庭の情報化の一貫として、音声インターフェースによるパーソナルアシスタント(Alexa
+            など)の研究も開始する。当ゼミでは、ゼミナールI、IIと卒業研究は一連の研究教育として、大学院生と共に研究し、指導していく。
+          </div>
+          <div class="lab_title">紹介動画</div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/mlBc0FYQHrY" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
-    </header>
-
-  <body>
-
-    <br><br><br><br>
-    <div class="products">
-      <div class="products__sort">
-        <input type="button" class="products__sort0" value="一覧" onclick="clickBtnIchiran()">
-        <input type="button" class="products__sort1" value="人間" onclick="clickBtnNingen()">
-        <input type="button" class="products__sort2" value="社会" onclick="clickBtnSyakai()">
-        <input type="button" class="products__sort3" value="情報" onclick="clickBtnJouhou()">
-      </div>
-      <div style="text-align:center;font-size:15px;margin-top:10px;">
-        <span style="font-size:30px;vertical-align: middle;"><i class="zmdi zmdi-youtube-play"></i></span>・・・紹介動画あり
       </div>
 
 
-      <div class="products__wrap">
-
-        <div class="product jo">
-          <input id="acd-check1" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check1">飯島 泰裕 教授　<i class="zmdi zmdi-youtube-play"></i></label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">O221</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">ICTによるコミュニテイ活性化の政策とビジネス</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              インターネットやスマホなど情報通信技術(ICT)が普及し、本格的な情報社会時代に進んでいる.そこで、日本や世界の先進事例を調査すると同時に、情報社会構築のために、行政政策やICTビジネスを、企業や行政と協力して実践的に研究する。つまり、情報収集、情報解析、プレゼンテーションを行い、戦略的な政策形成やビジネスプランを研究する。ゼミ(ゼミナールI、II、卒業研究I、II)では、デジタルサイネージ、SNS研究、電子図書館、リニア新幹線による都市計画等をテーマに研究している。当ゼミでは、ゼミナールI、IIと卒業研究は一連の研究教育として、大学院生と共に研究し、指導していく。
-            </div>
-            <div class="lab_title">紹介動画</div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/mlBc0FYQHrY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-           </div>
-        </div>
-
-
-        <div class="product sya">
-          <input id="acd-check2" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check2">石田 博之 教授　<i class="zmdi zmdi-youtube-play"></i></label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B635</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">エネルギーと経済・環境の持続可能な発展</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              エネルギー利用を考える際には、環境性のみならず、経済性、供給安定性、安全性など幅広い観点からの考察が重要です。本ゼミナールでは、経済発展、エネルギー消費、地球温暖化の相互関係を分析し、持続的な発展を可能とする諸条件等について、政策的および経済学的な観点から考察します。本ゼミナールでは、(1)エネルギー問題を分析する基本的な理論・知識の習得(2)最新データ・情報の取得(3)研究能力の向上を目指します。学生は与えられた分担を発表し、ゼミ内での討議を通じてエネルギー問題の理解を深めます。
-            </div>
-            <div class="lab_title">紹介動画</div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/fo33-08HhSI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="product sya">
+        <input id="acd-check2" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check2">石田 博之 教授　<i class="zmdi zmdi-youtube-play"></i></label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B635</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">エネルギーと経済・環境の持続可能な発展</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            エネルギー利用を考える際には、環境性のみならず、経済性、供給安定性、安全性など幅広い観点からの考察が重要です。本ゼミナールでは、経済発展、エネルギー消費、地球温暖化の相互関係を分析し、持続的な発展を可能とする諸条件等について、政策的および経済学的な観点から考察します。本ゼミナールでは、(1)エネルギー問題を分析する基本的な理論・知識の習得(2)最新データ・情報の取得(3)研究能力の向上を目指します。学生は与えられた分担を発表し、ゼミ内での討議を通じてエネルギー問題の理解を深めます。
           </div>
+          <div class="lab_title">紹介動画</div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/fo33-08HhSI" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
         </div>
-
-        <div class="product jo">
-          <input id="acd-check3" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check3">伊藤 一成 准教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">O204</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">メディア情報処理・メディア情報学に関する研究</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              「メディア」をキーワードに、メディア情報処理技法と運用の新しい仕組みや、応用技術の開発研究など、情報科学、情報工学の視点を基軸としつつも、加えてメディアを取り巻く情報学全般からの広域かつ多面的視点から研究します。
-            </div>
-           
-          </div>
-        </div>
-
-        <div class="product jo">
-          <input id="acd-check4" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check4">稲積 宏誠 教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B503</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">情報と社会・人間をつなげるデータサイエンティストをめざして</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              多くの情報が氾濫している現代社会。いまビックデータという言葉をよく聞きます。昔からすでに多くの情報が存在していたのですが、現在では、その情報を収集したり蓄積したりすることが容易になったために、誰でもその情報を扱うことができるようになりました。ネット通販でのリコメンデーションなどがその代表です。データを自由自在に扱うことのできる人:データサイエンティストは今最も注目されている人材の一つです。それを目指すのに必要な実力をつけることをゼミの目的とします。具体的に行うことは、
-              1) 統計入門、データ分析等の授業で扱ってこなかったデータ分析技術、テキストマイニングやデータマイニングの手法を学びます。2)
-              学んだ手法を実際に適用していくためのコンピュータアプリケーション(KHCoderとRapidMinerを予定)の使い方を学びます。3)
-              1)2)をもとにして、町田市・相模原市の市民の声・コールセンターに寄せられる問い合わせデータの解析、本学で実施されている学生意識調査データなどの解析を行うことで、分析技術と対象領域の知識(ドメイン知識といいます)の両方から有用な情報を得ることを経験します。
-            </div>
-            
-          </div>
-
-
-        </div>
-        <div class="product ni">
-
-          <input id="acd-check5" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check5">遠藤 俊典 准教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B638</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">競技者の競技的発達過程・ライフサイクルとトレーニング・コーチング</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              競技者およびそのコーチがパフォーマンス向上のために繰り返すトレーニング(試行錯誤や努力)は、極めて「学際的な営み」であり、「実践的な科学性」に満ちています.このことを理解するためには、経験知(身体知)と科学の知との融合、理論と実践との循環、課題解決型の思考体系・思考力、などに裏付けられた合理的なトレーニングと結果としてのパフォーマンスとの対応関係を紐解くことが必要です。遠藤ゼミでは、競技者やコーチの活動に対する理解を深め、アスリートのパフォーマンス向上に直接的に役立つ知を得ることを目標とします。ゼミナールIでは特に、競技者のライフサイクルに迫り、一個人がこれまでにどのような競技的発達過程を経て今に至り、今後どのような目標設定に基づいてパフォーマンスを向上させていくことができるかについて考えていきます。
-            </div>
-          
-          </div>
-
-
-        </div>
-        
-        
-         <div class="product sya">
-
-          <input id="acd-check6" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check6">大林 真也 准教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B525</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">社会現象の異分野融合研究：計算社会科学への旅</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              このゼミでは、社会学を核として分野融合的に社会現象の謎（メカニズム）を解明するということをテーマとします。特に近年では、オンライン空間（SNSなど）でのやりとりや情報機器で記録した行動などのビッグデータを利用する機会が増えています。ゼミでは、ビッグデータを収集し、テキスト解析・ネーットワーク分析・エージェントベーストシミュレーションなどを行い、社会の謎を解明する知識と技法を身につけます。Rやpythonを使えることは望ましいですが、まずは「社会の謎」（社会学的な問い）を見つけることが重要です。まずは、文献や研究例の多読を通じて「社会に対する眼差し」を身につけましょう。
-            </div>
-        　</div>
-        </div>
-        
-        <div class="product ni">
-
-          <input id="acd-check7" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check7">香川 秀太 准教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B502</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">コミュニティや社会活動における学習</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              コミュニティや社会活動への参加や創造がテーマのゼミです。「遊び(プレイ)」、「多様性を生かした創造」をキーワードに、実践的でユニークな活動を学生主体でデザインしていきます。同時に、学習・発達論やコミュニティ論も学んできます。ゼミ自体を「多様性から成るコミュニティ」と見なして、個々の特技や特性を生かした演劇遊びや対話活動をゼミ内で行ったり、外部のNPO団体等の先端的な活動にも参加しながら、それらの活動への貢献につながるような、自分たち独自のオリジナルのイベントや活動を創造します。毎年異なりますが、これまでは、オリジナルのファッションショーやパフォーマンス動画の作成等を行いました。
-            </div>
-            
-          </div>
-
-        </div>
-
-
-        <div class="product ni">
-          <input id="acd-check8" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check8">苅宿 俊文 教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B502</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">学習環境デザイン、学習コミュニティデザインの実践的な開発研究・調査研究</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              苅宿ゼミは教育工学、学習科学を基盤とした学習環境デザイン、学習コミュニティデザインの研究室である。活動内容は開発研究と調査研究の2つの分野。開発研究分野は、メディア表現系のアプリを活用したワークショップデザイン。調査研究分野は、メディア表現系ワークショップやそれを活用した小中学校の授業などのフィールド調査。フィールド調査の背景である学習環境デザインに関連する文献購読とその討議がある。活動対象は下記の4点。1.相模原市や鳥取県の児童、生徒、保護者向けワークショップの開催の企画、運営、調査。2.メディア表現系のアプリの活用用途の企画、開発、調査。3.学校教育で展開されている汎用的能力の育成を目的としたアート系ワークショップの企画、運営、調査。4.社会人向けのワークショップデザイン講座の調査。
-            </div>
-            
-          </div>
-        </div>
-
-
-        <div class="product ni">
-
-
-          <input id="acd-check9" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check9">清成 透子 教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">O215</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">マイクロ・マクロ社会心理学(人間の心と社会の相互規定関係)</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              清成研究室では、人間の社会性(協力行動、共感性、公正感、正義感、道徳心、信頼感など社会生活を支える「こころ」の働き)について、社会心理学・行動経済学・神経経済学・内分泌学・進化心理学・社会学・文化心理学などの融合領域で研究を行っています。今後は集団状況での意思決定に関する研究を中心に進める予定でいるので、どちらかというと個々人の心(マイクロ)そのものに興味がある人よりは、社会(マクロ)に関心のある人を歓迎します。実験や調査研究で得られた数値データを統計的に解析する量的研究を行うので、統計学のリテラシーは必要です。視線追跡(アイカメラ)を用いた研究も行っています。心理学実験用のプログラミングをしてみたい人、実験のお手伝いをしたい人、大学院進学希望者は歓迎します。今年は新しくSNSデータの解析プロジェクトも開始しますので、公共財問題に関連したSNSデータ解析に興味がある人も歓迎します。
-            </div>
-           
-          </div>
-
-        </div>
-        <div class="product ni">
-
-          <input id="acd-check10" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check10">小池 和彦 教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B516</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">初等整数論と代数への入門</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              初等整数論の教科書を交代で紹介しながら、中の練習問題を解いていくことにより、代数の基礎となっている分野について学びます.代数の抽象的な概念がいかにして具体的な例から抽出されたかを学ぶことにより、生きている数学を感じてほしいと思います.
-            </div>
-            
-            
-          </div>
-
-        </div>
-        <div class="product ni">
-
-
-          <input id="acd-check11" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check11">高木 光太郎 教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B517</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">想起への生態学的アプローチ</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              このゼミナールでは人が過去を思い出す過程(想起)を、様々な社会的実践の現場で展開するコミュニケーションや相互行為の分析を通して理解することを目指す心理学研究(生態学的記憶研究)の基本的な考え方や研究方法を習得することを目指す。具体的には「刑事事件・裁判における供述」「厄災(戦争・災害)の記憶の伝承」「超常体験の語り」「家族の思い出」といった諸問題を切り口としながら、このアプローチの基礎的な考え方、研究方法、研究成果を理解するための文献講読を行う。
-            </div>
-            
-          </div>
-
-        </div>
-        <div class="product ni">
-
-          <input id="acd-check12" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check12">寺尾 敦 教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B526</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">H.A.Simonを目指す―真に分野融合的な人材の育成―</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              2017年度のノーベル経済学賞は行動経済学の大家リチャード・セイラーに与えられました。行動経済学の歴史を遡ると1978年の同賞受賞者、ハーバート・サイモンにたどり着きます.社会情報学部の学生なら、サイモンは目指すべき理想です.「限定合理性」という概念を核として、社会、人間、情報の3分野で重要な業績を残しました。サイモンを知らないまま卒業してしまうのでは、社会情報学部に在籍した意味はなかったと言っても過言ではありません。このゼミの目的はサイモンのような真に分野融合的な人材を育成することです。社会情報学部での幅広い学びが、単にいろいろな分野をかじったということにならないよう、分野を統合する核を見つける努力を求めます。手始めに、ゼミナールIではセイラーの著作(あるいは行動経済学の文献)を読み、ディスカッションを通して物事を広く深く考える訓練を行います。サイモンの著作も読みます.英語文献も含みます。
-            </div>
-           
-          </div>
-
-
-        </div>
-        <div class="product sya">
-
-          <input id="acd-check13" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check13">長橋 透 教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B523</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">観光を客観的に分析しよう</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              卒業研究に向けて、観光に関わるテーマを見つけ、それに対する「問い」を立て、どのような客観的な方法(経済理論や実証分析)が必要なのかを考える場にしたいと思います。また、各自のテーマの報告を通じて構成力やプレゼン力を養うとともに、他のゼミ生に建設的な意見を言えるようなゼミにしたいと思います。そして今年度も、学生観光プレゼン大会(7月初旬)に参加します。
-            </div>
-            
-          </div>
-
-
-        </div>
-        <div class="product sya">
-
-          <input id="acd-check14" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check14">南部 和香 准教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B519</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">様々な社会現象についての経済分析</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              身の回りにある様々な社会現象について、経済理論に基づいて定量的に分析して、その関係性を明らかにすることがこの研究室のテーマです。研究テーマについては各自で自由に決めてもらいます。ゼミでは最初に基本となる経済理論や統計、計量経済学、使用ソフトについて学びます。そのあと、各自関心のあるテーマについて調べ、分析した結果を発表してもらう形式をとる予定です。計量分析はソフトを使って簡単に結果が得られると思われがちですが、実際は思いの外データ収集に苦労し、推定と検定と考察をひたすら繰り返すものなので、楽ではありません。根気強くコツコツと努力を重ねていけるゼミ生を歓迎します。
-            </div>
-            
-          </div>
-
-        </div>
-        <div class="product sya">
-
-          <input id="acd-check15" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check15">開澤 栄相 教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B525</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">国際経済と国際金融</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">ゼミナールIでは、国際経済や国際金融の基礎理論と現実の様々な問題を学習します。2019年度は、TPP、米国、英国、中東問題、
-              貧困問題、難民問題、宗教問題などについて考察します。1冊の本を全員で分担して読み、討論することを目標としています。</div>
-          
-          </div>
-
-
-        </div>
-        <div class="product sya">
-
-          <input id="acd-check16" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check16">伏屋 広隆 教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B501</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">数理ファイナンスの基礎</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              講義により金融分野の1つである数理ファイナンスの基礎を身につけていくゼミにしたいと思います。数理ファイナンスは今までの皆さんが学んできたものとは全く違う分野です。内容が知りたい方は事前説明会に来てください。ゼミでは比較的取り組みやすい2項モデルを使い、本格的な数理ファイナンスを学んでいくのに必要な理論のイメージを養いつつ、ブラック・ショールズ式を説明します。講義内容は将来必要となる連続時間モデルの内容と対応がつくよう工夫して構成されています。
-            </div>
-       
-          </div>
-
-        </div>
-        <div class="product jo">
-
-          <input id="acd-check17" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check17">松澤 芳昭 准教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B521</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">柔らかい情報システムのデザインと学習科学</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              人間の社会的活動と調和し、人間の創造的活動を増幅するような「柔らかい」情報システムのデザインを考えることが研究会のテーマです。過度に技術にとらわれることなく、人間活動をよく分析し、使う人に寄り添う、社会情報学部らしい総合的な問題解決を考えていきます。新しいサービスを提案するWeb情報システム、現場の問題を解決する企業情報システム、より使いやすいインタフェースの考案、人間が賢くなるための教育カリキュラム/システムの開発、子供のための情報教育、情報化社会の分析など、研究テーマは様々ですが、規模が小さくても実際に何かを試作したり、施行したり、実践を伴う研究を指向します。対象分野は任意選択ですが、担当教員の得意な分野は、学習科学への応用です。プログラミング教育、Learning
-              Analytics、協調学習など、創造的な学習環境のための情報システム研究に興味のある学生を特に歓迎します。</div>
-     
-          </div>
-
-        </div>
-        <div class="product sya">
-
-          <input id="acd-check18" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check18">皆木 健男 准教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B518</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">証券分析</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              本演習では、モダンファイナンスおよび行動ファイナンスをあつかいます。モダンファイナンスでは、経済合理性を前提に証券価格が決定される過程を学び、行動ファイナンスでは、人間の経済非合理性を前提に証券価格がいかに決定されるのかを学びます。ただし、行動ファイナンスもモダンファイナンスも否定しあうものではありません。まず、テキストを輪読し、そののち各受講者が研究テーマ
-              を設定し、みずから分析してもらう予定です。</div>
-            
-          </div>
-
-        </div>
-        <div class="product jo">
-
-          <input id="acd-check19" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check19">宮川 裕之 教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B520</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">情報システム計画、システム分析・設計</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              情報システムの企画・分析・設計について学びます。ゼミナールIでは、そのための基本的な力をつけます。「情報システムとコンピュータ・システム」、「情報と経営」、「分析手法」、「情報システムのモデリング」等についての基本を学ぶとともに、ケーススタディやグループワークで理解を深めます。システムベンダー系の企業だけではなく、ユーザ系の企業においても役立つ内容です。
-            </div>
-            
-          </div>
-
-        </div>
-        <div class="product jo">
-
-          <input id="acd-check20" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check20">宮治 裕 教授　<i class="zmdi zmdi-youtube-play"></i></label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">O202</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">ウェブサービス開発、IoTに関連システム開発、感性工学・福祉工学のシステム開発</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              本研究室では、ウェブやネットに加えて身の回りの様々なセンサ情報を活用したシステムやサービスの実現をめざして研究している。その実現には様々な技術力を必要とするため、3年次のゼミ課題ではそれらの中のいくつかを習得する。具体的には、「情報収集としてのWebクローリングやSNS等のAPI活用/小型コンピュータ及び各種センサ活用/画像処理・認識」「付加価値を与える為のデータ分析や機械学習」「サーバサイド開発/機器連携プログラミング」「効果的な情報提示や操作環境としてウェブサービスやスマホアプリ開発/AR・VR・MR活用/NUI機器活用」等から、各自でテーマを設定し実際に開発することで技術を習得する。また、ゼミの時間は持ち回りのプレゼン方式で、現在のネットサービスの特徴や戦略・ネットコミュニティ・IoTの市場や活用例等についても学ぶ。
-            </div>
-            <div class="lab_title">紹介動画</div>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/w7unpBTw7FM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-
-        </div>
-        <div class="product jo">
-
-
-          <input id="acd-check21" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check21">村田 和義 准教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">O201</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">人とコンピュータとのインタラクション・コミュニケーション支援</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">
-              人とコンピュータ(情報機器)との間で行われる情報のやりとり(インタラクション)、あるいは人と人との間で行われるやりとり(コミュニケーション)で生じる様々な問題に関連するトピックを取り上げ、研究活動を行います。　　　　　　　
-            </div>
-            
-          </div>
-
-
-        </div>
-        <div class="product sya">
-
-          <input id="acd-check22" class="acd-check" type="checkbox">
-          <label class="acd-label" for="acd-check22">矢野 公一 教授</label>
-          <div class="acd-content">
-            <div class="lab_title">研究室</div>
-            <div class="lab_contents">B516</div>
-            <div class="lab_title">研究テーマ</div>
-            <div class="lab_contents">数学を使って何かをするための基礎体力づくり</div>
-            <div class="lab_title">ゼミの概要</div>
-            <div class="lab_contents">ROSによるロボット制御、パターン認識と機械学習(Deep
-              learning)、流体シミュレーションなどのプログラミング、数理ファイナンスなど金融工学の学習、初等、中等、高等教育それぞれについての手法分析あるいは教材作成など、いざ取り組もうとしたときに数学に関する基礎学力が要求されるタスクは多い。将来の研究あるいは仕事に向けて、数学の基礎体力を養うことを目指す。数理科学に関連した入門的テキストを受講者が紹介し、内容を理解していく輪講と、具体的な実践を並行して行うことを考えている。テキストは各受講生の要望に応じて決める。多少あやふやでもよいが、どのような対象に興味があるのか、どのような分野を勉強したいのかについて自分の意見をもっていることが望ましい。
-            </div>
-           
-          </div>
-        </div>
-        
-       
       </div>
 
-  </body>
-  
+      <div class="product jo">
+        <input id="acd-check3" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check3">伊藤 一成 准教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">O204</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">メディア情報処理・メディア情報学に関する研究</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            「メディア」をキーワードに、メディア情報処理技法と運用の新しい仕組みや、応用技術の開発研究など、情報科学、情報工学の視点を基軸としつつも、加えてメディアを取り巻く情報学全般からの広域かつ多面的視点から研究します。
+          </div>
 
-  <script>
+        </div>
+      </div>
+
+      <div class="product jo">
+        <input id="acd-check4" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check4">稲積 宏誠 教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B503</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">情報と社会・人間をつなげるデータサイエンティストをめざして</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            多くの情報が氾濫している現代社会。いまビックデータという言葉をよく聞きます。昔からすでに多くの情報が存在していたのですが、現在では、その情報を収集したり蓄積したりすることが容易になったために、誰でもその情報を扱うことができるようになりました。ネット通販でのリコメンデーションなどがその代表です。データを自由自在に扱うことのできる人:データサイエンティストは今最も注目されている人材の一つです。それを目指すのに必要な実力をつけることをゼミの目的とします。具体的に行うことは、
+            1) 統計入門、データ分析等の授業で扱ってこなかったデータ分析技術、テキストマイニングやデータマイニングの手法を学びます。2)
+            学んだ手法を実際に適用していくためのコンピュータアプリケーション(KHCoderとRapidMinerを予定)の使い方を学びます。3)
+            1)2)をもとにして、町田市・相模原市の市民の声・コールセンターに寄せられる問い合わせデータの解析、本学で実施されている学生意識調査データなどの解析を行うことで、分析技術と対象領域の知識(ドメイン知識といいます)の両方から有用な情報を得ることを経験します。
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="product ni">
+
+        <input id="acd-check5" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check5">遠藤 俊典 准教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B638</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">競技者の競技的発達過程・ライフサイクルとトレーニング・コーチング</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            競技者およびそのコーチがパフォーマンス向上のために繰り返すトレーニング(試行錯誤や努力)は、極めて「学際的な営み」であり、「実践的な科学性」に満ちています.このことを理解するためには、経験知(身体知)と科学の知との融合、理論と実践との循環、課題解決型の思考体系・思考力、などに裏付けられた合理的なトレーニングと結果としてのパフォーマンスとの対応関係を紐解くことが必要です。遠藤ゼミでは、競技者やコーチの活動に対する理解を深め、アスリートのパフォーマンス向上に直接的に役立つ知を得ることを目標とします。ゼミナールIでは特に、競技者のライフサイクルに迫り、一個人がこれまでにどのような競技的発達過程を経て今に至り、今後どのような目標設定に基づいてパフォーマンスを向上させていくことができるかについて考えていきます。
+          </div>
+
+        </div>
+
+
+      </div>
+
+
+      <div class="product sya">
+
+        <input id="acd-check6" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check6">大林 真也 准教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B525</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">社会現象の異分野融合研究：計算社会科学への旅</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            このゼミでは、社会学を核として分野融合的に社会現象の謎（メカニズム）を解明するということをテーマとします。特に近年では、オンライン空間（SNSなど）でのやりとりや情報機器で記録した行動などのビッグデータを利用する機会が増えています。ゼミでは、ビッグデータを収集し、テキスト解析・ネーットワーク分析・エージェントベーストシミュレーションなどを行い、社会の謎を解明する知識と技法を身につけます。Rやpythonを使えることは望ましいですが、まずは「社会の謎」（社会学的な問い）を見つけることが重要です。まずは、文献や研究例の多読を通じて「社会に対する眼差し」を身につけましょう。
+          </div>
+          　
+        </div>
+      </div>
+
+      <div class="product ni">
+
+        <input id="acd-check7" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check7">香川 秀太 准教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B502</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">コミュニティや社会活動における学習</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            コミュニティや社会活動への参加や創造がテーマのゼミです。「遊び(プレイ)」、「多様性を生かした創造」をキーワードに、実践的でユニークな活動を学生主体でデザインしていきます。同時に、学習・発達論やコミュニティ論も学んできます。ゼミ自体を「多様性から成るコミュニティ」と見なして、個々の特技や特性を生かした演劇遊びや対話活動をゼミ内で行ったり、外部のNPO団体等の先端的な活動にも参加しながら、それらの活動への貢献につながるような、自分たち独自のオリジナルのイベントや活動を創造します。毎年異なりますが、これまでは、オリジナルのファッションショーやパフォーマンス動画の作成等を行いました。
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <div class="product ni">
+        <input id="acd-check8" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check8">苅宿 俊文 教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B502</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">学習環境デザイン、学習コミュニティデザインの実践的な開発研究・調査研究</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            苅宿ゼミは教育工学、学習科学を基盤とした学習環境デザイン、学習コミュニティデザインの研究室である。活動内容は開発研究と調査研究の2つの分野。開発研究分野は、メディア表現系のアプリを活用したワークショップデザイン。調査研究分野は、メディア表現系ワークショップやそれを活用した小中学校の授業などのフィールド調査。フィールド調査の背景である学習環境デザインに関連する文献購読とその討議がある。活動対象は下記の4点。1.相模原市や鳥取県の児童、生徒、保護者向けワークショップの開催の企画、運営、調査。2.メディア表現系のアプリの活用用途の企画、開発、調査。3.学校教育で展開されている汎用的能力の育成を目的としたアート系ワークショップの企画、運営、調査。4.社会人向けのワークショップデザイン講座の調査。
+          </div>
+
+        </div>
+      </div>
+
+
+      <div class="product ni">
+
+
+        <input id="acd-check9" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check9">清成 透子 教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">O215</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">マイクロ・マクロ社会心理学(人間の心と社会の相互規定関係)</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            清成研究室では、人間の社会性(協力行動、共感性、公正感、正義感、道徳心、信頼感など社会生活を支える「こころ」の働き)について、社会心理学・行動経済学・神経経済学・内分泌学・進化心理学・社会学・文化心理学などの融合領域で研究を行っています。今後は集団状況での意思決定に関する研究を中心に進める予定でいるので、どちらかというと個々人の心(マイクロ)そのものに興味がある人よりは、社会(マクロ)に関心のある人を歓迎します。実験や調査研究で得られた数値データを統計的に解析する量的研究を行うので、統計学のリテラシーは必要です。視線追跡(アイカメラ)を用いた研究も行っています。心理学実験用のプログラミングをしてみたい人、実験のお手伝いをしたい人、大学院進学希望者は歓迎します。今年は新しくSNSデータの解析プロジェクトも開始しますので、公共財問題に関連したSNSデータ解析に興味がある人も歓迎します。
+          </div>
+
+        </div>
+
+      </div>
+      <div class="product ni">
+
+        <input id="acd-check10" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check10">小池 和彦 教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B516</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">初等整数論と代数への入門</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            初等整数論の教科書を交代で紹介しながら、中の練習問題を解いていくことにより、代数の基礎となっている分野について学びます.代数の抽象的な概念がいかにして具体的な例から抽出されたかを学ぶことにより、生きている数学を感じてほしいと思います.
+          </div>
+
+
+        </div>
+
+      </div>
+      <div class="product ni">
+
+
+        <input id="acd-check11" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check11">高木 光太郎 教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B517</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">想起への生態学的アプローチ</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            このゼミナールでは人が過去を思い出す過程(想起)を、様々な社会的実践の現場で展開するコミュニケーションや相互行為の分析を通して理解することを目指す心理学研究(生態学的記憶研究)の基本的な考え方や研究方法を習得することを目指す。具体的には「刑事事件・裁判における供述」「厄災(戦争・災害)の記憶の伝承」「超常体験の語り」「家族の思い出」といった諸問題を切り口としながら、このアプローチの基礎的な考え方、研究方法、研究成果を理解するための文献講読を行う。
+          </div>
+
+        </div>
+
+      </div>
+      <div class="product ni">
+
+        <input id="acd-check12" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check12">寺尾 敦 教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B526</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">H.A.Simonを目指す―真に分野融合的な人材の育成―</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            2017年度のノーベル経済学賞は行動経済学の大家リチャード・セイラーに与えられました。行動経済学の歴史を遡ると1978年の同賞受賞者、ハーバート・サイモンにたどり着きます.社会情報学部の学生なら、サイモンは目指すべき理想です.「限定合理性」という概念を核として、社会、人間、情報の3分野で重要な業績を残しました。サイモンを知らないまま卒業してしまうのでは、社会情報学部に在籍した意味はなかったと言っても過言ではありません。このゼミの目的はサイモンのような真に分野融合的な人材を育成することです。社会情報学部での幅広い学びが、単にいろいろな分野をかじったということにならないよう、分野を統合する核を見つける努力を求めます。手始めに、ゼミナールIではセイラーの著作(あるいは行動経済学の文献)を読み、ディスカッションを通して物事を広く深く考える訓練を行います。サイモンの著作も読みます.英語文献も含みます。
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="product sya">
+
+        <input id="acd-check13" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check13">長橋 透 教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B523</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">観光を客観的に分析しよう</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            卒業研究に向けて、観光に関わるテーマを見つけ、それに対する「問い」を立て、どのような客観的な方法(経済理論や実証分析)が必要なのかを考える場にしたいと思います。また、各自のテーマの報告を通じて構成力やプレゼン力を養うとともに、他のゼミ生に建設的な意見を言えるようなゼミにしたいと思います。そして今年度も、学生観光プレゼン大会(7月初旬)に参加します。
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="product sya">
+
+        <input id="acd-check14" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check14">南部 和香 准教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B519</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">様々な社会現象についての経済分析</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            身の回りにある様々な社会現象について、経済理論に基づいて定量的に分析して、その関係性を明らかにすることがこの研究室のテーマです。研究テーマについては各自で自由に決めてもらいます。ゼミでは最初に基本となる経済理論や統計、計量経済学、使用ソフトについて学びます。そのあと、各自関心のあるテーマについて調べ、分析した結果を発表してもらう形式をとる予定です。計量分析はソフトを使って簡単に結果が得られると思われがちですが、実際は思いの外データ収集に苦労し、推定と検定と考察をひたすら繰り返すものなので、楽ではありません。根気強くコツコツと努力を重ねていけるゼミ生を歓迎します。
+          </div>
+
+        </div>
+
+      </div>
+      <div class="product sya">
+
+        <input id="acd-check15" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check15">開澤 栄相 教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B525</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">国際経済と国際金融</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">ゼミナールIでは、国際経済や国際金融の基礎理論と現実の様々な問題を学習します。2019年度は、TPP、米国、英国、中東問題、
+            貧困問題、難民問題、宗教問題などについて考察します。1冊の本を全員で分担して読み、討論することを目標としています。</div>
+
+        </div>
+
+
+      </div>
+      <div class="product sya">
+
+        <input id="acd-check16" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check16">伏屋 広隆 教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B501</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">数理ファイナンスの基礎</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            講義により金融分野の1つである数理ファイナンスの基礎を身につけていくゼミにしたいと思います。数理ファイナンスは今までの皆さんが学んできたものとは全く違う分野です。内容が知りたい方は事前説明会に来てください。ゼミでは比較的取り組みやすい2項モデルを使い、本格的な数理ファイナンスを学んでいくのに必要な理論のイメージを養いつつ、ブラック・ショールズ式を説明します。講義内容は将来必要となる連続時間モデルの内容と対応がつくよう工夫して構成されています。
+          </div>
+
+        </div>
+
+      </div>
+      <div class="product jo">
+
+        <input id="acd-check17" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check17">松澤 芳昭 准教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B521</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">柔らかい情報システムのデザインと学習科学</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            人間の社会的活動と調和し、人間の創造的活動を増幅するような「柔らかい」情報システムのデザインを考えることが研究会のテーマです。過度に技術にとらわれることなく、人間活動をよく分析し、使う人に寄り添う、社会情報学部らしい総合的な問題解決を考えていきます。新しいサービスを提案するWeb情報システム、現場の問題を解決する企業情報システム、より使いやすいインタフェースの考案、人間が賢くなるための教育カリキュラム/システムの開発、子供のための情報教育、情報化社会の分析など、研究テーマは様々ですが、規模が小さくても実際に何かを試作したり、施行したり、実践を伴う研究を指向します。対象分野は任意選択ですが、担当教員の得意な分野は、学習科学への応用です。プログラミング教育、Learning
+            Analytics、協調学習など、創造的な学習環境のための情報システム研究に興味のある学生を特に歓迎します。</div>
+
+        </div>
+
+      </div>
+      <div class="product sya">
+
+        <input id="acd-check18" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check18">皆木 健男 准教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B518</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">証券分析</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            本演習では、モダンファイナンスおよび行動ファイナンスをあつかいます。モダンファイナンスでは、経済合理性を前提に証券価格が決定される過程を学び、行動ファイナンスでは、人間の経済非合理性を前提に証券価格がいかに決定されるのかを学びます。ただし、行動ファイナンスもモダンファイナンスも否定しあうものではありません。まず、テキストを輪読し、そののち各受講者が研究テーマ
+            を設定し、みずから分析してもらう予定です。</div>
+
+        </div>
+
+      </div>
+      <div class="product jo">
+
+        <input id="acd-check19" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check19">宮川 裕之 教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B520</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">情報システム計画、システム分析・設計</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            情報システムの企画・分析・設計について学びます。ゼミナールIでは、そのための基本的な力をつけます。「情報システムとコンピュータ・システム」、「情報と経営」、「分析手法」、「情報システムのモデリング」等についての基本を学ぶとともに、ケーススタディやグループワークで理解を深めます。システムベンダー系の企業だけではなく、ユーザ系の企業においても役立つ内容です。
+          </div>
+
+        </div>
+
+      </div>
+      <div class="product jo">
+
+        <input id="acd-check20" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check20">宮治 裕 教授　<i class="zmdi zmdi-youtube-play"></i></label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">O202</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">ウェブサービス開発、IoTに関連システム開発、感性工学・福祉工学のシステム開発</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            本研究室では、ウェブやネットに加えて身の回りの様々なセンサ情報を活用したシステムやサービスの実現をめざして研究している。その実現には様々な技術力を必要とするため、3年次のゼミ課題ではそれらの中のいくつかを習得する。具体的には、「情報収集としてのWebクローリングやSNS等のAPI活用/小型コンピュータ及び各種センサ活用/画像処理・認識」「付加価値を与える為のデータ分析や機械学習」「サーバサイド開発/機器連携プログラミング」「効果的な情報提示や操作環境としてウェブサービスやスマホアプリ開発/AR・VR・MR活用/NUI機器活用」等から、各自でテーマを設定し実際に開発することで技術を習得する。また、ゼミの時間は持ち回りのプレゼン方式で、現在のネットサービスの特徴や戦略・ネットコミュニティ・IoTの市場や活用例等についても学ぶ。
+          </div>
+          <div class="lab_title">紹介動画</div>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/w7unpBTw7FM" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+
+      </div>
+      <div class="product jo">
+
+
+        <input id="acd-check21" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check21">村田 和義 准教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">O201</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">人とコンピュータとのインタラクション・コミュニケーション支援</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">
+            人とコンピュータ(情報機器)との間で行われる情報のやりとり(インタラクション)、あるいは人と人との間で行われるやりとり(コミュニケーション)で生じる様々な問題に関連するトピックを取り上げ、研究活動を行います。　　　　　　　
+          </div>
+
+        </div>
+
+
+      </div>
+      <div class="product sya">
+
+        <input id="acd-check22" class="acd-check" type="checkbox">
+        <label class="acd-label" for="acd-check22">矢野 公一 教授</label>
+        <div class="acd-content">
+          <div class="lab_title">研究室</div>
+          <div class="lab_contents">B516</div>
+          <div class="lab_title">研究テーマ</div>
+          <div class="lab_contents">数学を使って何かをするための基礎体力づくり</div>
+          <div class="lab_title">ゼミの概要</div>
+          <div class="lab_contents">ROSによるロボット制御、パターン認識と機械学習(Deep
+            learning)、流体シミュレーションなどのプログラミング、数理ファイナンスなど金融工学の学習、初等、中等、高等教育それぞれについての手法分析あるいは教材作成など、いざ取り組もうとしたときに数学に関する基礎学力が要求されるタスクは多い。将来の研究あるいは仕事に向けて、数学の基礎体力を養うことを目指す。数理科学に関連した入門的テキストを受講者が紹介し、内容を理解していく輪講と、具体的な実践を並行して行うことを考えている。テキストは各受講生の要望に応じて決める。多少あやふやでもよいが、どのような対象に興味があるのか、どのような分野を勉強したいのかについて自分の意見をもっていることが望ましい。
+          </div>
+
+        </div>
+      </div>
+
+
+    </div>
+
+</body>
+
+
+<script>
+  // 最初は　人間・社会・情報　すべてを表示
+  var ni = document.getElementsByClassName("ni");
+  var sya = document.getElementsByClassName("sya");
+  var jo = document.getElementsByClassName("jo");
+  for (var i = 0; i < ni.length; i++) {
+    ni[i].style.display = "block";
+  }
+  for (var i = 0; i < sya.length; i++) {
+    sya[i].style.display = "block";
+  }
+  for (var i = 0; i < jo.length; i++) {
+    jo[i].style.display = "block";
+  }
+
+  // 一覧が押下されたとき　すべてを表示
+  function clickBtnIchiran() {
     var ni = document.getElementsByClassName("ni");
     var sya = document.getElementsByClassName("sya");
     var jo = document.getElementsByClassName("jo");
@@ -500,65 +516,47 @@
     for (var i = 0; i < jo.length; i++) {
       jo[i].style.display = "block";
     }
-    function clickBtnIchiran() {
-      var ni = document.getElementsByClassName("ni");
-      var sya = document.getElementsByClassName("sya");
-      var jo = document.getElementsByClassName("jo");
-      for (var i = 0; i < ni.length; i++) {
-        ni[i].style.display = "block";
-      }
-      for (var i = 0; i < sya.length; i++) {
-        sya[i].style.display = "block";
-      }
-      for (var i = 0; i < jo.length; i++) {
-        jo[i].style.display = "block";
-      }
+  }
 
+  // 人間が押下されたとき　人間のみを表示
+  function clickBtnNingen() {
+    for (var i = 0; i < ni.length; i++) {
+      ni[i].style.display = "block";
     }
-    function clickBtnNingen() {
-      for (var i = 0; i < ni.length; i++) {
-        ni[i].style.display = "block";
-      }
-
-      for (var i = 0; i < sya.length; i++) {
-        sya[i].style.display = "none";
-      }
-      for (var i = 0; i < jo.length; i++) {
-        jo[i].style.display = "none";
-      }
-
+    for (var i = 0; i < sya.length; i++) {
+      sya[i].style.display = "none";
     }
-    function clickBtnSyakai() {
-
-      for (var i = 0; i < ni.length; i++) {
-        ni[i].style.display = "none";
-      }
-      for (var i = 0; i < sya.length; i++) {
-        sya[i].style.display = "block";
-      }
-
-      for (var i = 0; i < jo.length; i++) {
-        jo[i].style.display = "none";
-      }
-
+    for (var i = 0; i < jo.length; i++) {
+      jo[i].style.display = "none";
     }
+  }
 
-    function clickBtnJouhou() {
-
-      for (var i = 0; i < ni.length; i++) {
-        ni[i].style.display = "none";
-      }
-      for (var i = 0; i < sya.length; i++) {
-        sya[i].style.display = "none";
-      }
-      for (var i = 0; i < jo.length; i++) {
-        jo[i].style.display = "block";
-      }
-
-
+  // 社会が押下されたとき　社会のみを表示
+  function clickBtnSyakai() {
+    for (var i = 0; i < ni.length; i++) {
+      ni[i].style.display = "none";
     }
+    for (var i = 0; i < sya.length; i++) {
+      sya[i].style.display = "block";
+    }
+    for (var i = 0; i < jo.length; i++) {
+      jo[i].style.display = "none";
+    }
+  }
 
+  // 情報が押下されたとき　情報のみを表示
+  function clickBtnJouhou() {
+    for (var i = 0; i < ni.length; i++) {
+      ni[i].style.display = "none";
+    }
+    for (var i = 0; i < sya.length; i++) {
+      sya[i].style.display = "none";
+    }
+    for (var i = 0; i < jo.length; i++) {
+      jo[i].style.display = "block";
+    }
+  }
+</script>
 
-  </script>
-  <footer></footer>
-  </html>
+<footer></footer>
+</html>
