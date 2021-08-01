@@ -41,7 +41,7 @@
                     <li class="logo">
                         <a href="home.html">
                             <h1><img src="image/new_logo.png" alt="社会情報学部" /></h1>
-                            <span class="en">School of Social Informatics</span>
+                            <span class="en">Social Informatics Student Association</span>
                         </a>
                     </li>
                     <li class="menu04 header_menu_list">
@@ -132,8 +132,11 @@
     <div class="lab_contents" style="text-align:center;font-size:50px;"><a href="http://syllabus.aoyama.ac.jp/">気になる授業を検索する</a>←クリック！！</div>
    -->
   </body>  
+    
   <footer></footer>  
+
   <script>
+    // スクロールされたとき　時間割が浮かび上がってくるように表示
     window.addEventListener("DOMContentLoaded", function() {
     window.onscroll = function (){
       var myFade = document.getElementsByClassName("fade_in");
@@ -147,17 +150,29 @@
         }
       }
     }
-  })
+    })
+
+    // 最初は　全学年・全コース　を表示
     var one = document.getElementsByClassName("one");
     var two = document.getElementsByClassName("two");
     var three = document.getElementsByClassName("three");
     var four = document.getElementsByClassName("four");
-
     var syajo = document.getElementsByClassName("syajo");
     var syanin = document.getElementsByClassName("syanin");
     var ninjo = document.getElementsByClassName("ninjo");
-    var nocose = document.getElementsByClassName("nocose");
-    
+    var nocose = document.getElementsByClassName("nocose"); 
+    for (var i = 0; i < one.length; i++) {
+      one[i].style.display = "block";
+    }
+    for (var i = 0; i < two.length; i++) {
+      two[i].style.display = "block";
+    }
+    for (var i = 0; i < three.length; i++) {
+      three[i].style.display = "block";
+    }
+    for (var i = 0; i < four.length; i++) {
+      four[i].style.display = "block";
+    }
     for (var i = 0; i < syajo.length; i++) {
       syajo[i].style.display = "block";
     }
@@ -167,6 +182,11 @@
     for (var i = 0; i < ninjo.length; i++) {
       ninjo[i].style.display = "block";
     }
+    for (var i = 0; i < nocose.length; i++) {
+      nocose[i].style.display = "block";
+    }
+
+    // 一覧が押下されたとき　すべてを表示
     function clickBtnIchiran() {
       var one = document.getElementsByClassName("one");
       var two = document.getElementsByClassName("two");
@@ -201,6 +221,8 @@
         nocose[i].style.display = "block";
       }
     }
+
+    // 社会・情報が押下されたとき　社会・情報のみを表示
     function clickBtnSyajo() {
       for (var i = 0; i < syajo.length; i++) {
         syajo[i].style.display = "block";
@@ -215,6 +237,8 @@
         nocose[i].style.display = "none";
       }
     }
+
+    // 社会・人間が押下されたとき　社会・人間のみを表示
     function clickBtnSyanin() {
       for (var i = 0; i < syajo.length; i++) {
         syajo[i].style.display = "none";
@@ -229,6 +253,8 @@
         nocose[i].style.display = "none";
       }
     }
+
+    // 人間・情報が押下されたとき　人間・情報のみを表示
     function clickBtnNinjo() {
       for (var i = 0; i < syajo.length; i++) {
         syajo[i].style.display = "none";
@@ -243,6 +269,8 @@
         nocose[i].style.display = "none";
       }
     }
+
+    // 1年が押下されたとき　1年のみを表示
     function clickBtnOne() {
       for (var i = 0; i < one.length; i++) {
         one[i].style.display = "block";
@@ -257,6 +285,8 @@
         four[i].style.display = "none";
       }    
     }
+
+    // 2年が押下されたとき　2年のみを表示
     function clickBtnTwo() {
       for (var i = 0; i < one.length; i++) {
         one[i].style.display = "none";
@@ -271,6 +301,8 @@
         four[i].style.display = "none";
       }    
     }
+
+    // 3年が押下されたとき　3年のみを表示
     function clickBtnThree() {
       for (var i = 0; i < one.length; i++) {
         one[i].style.display = "none";
@@ -285,6 +317,8 @@
         four[i].style.display = "none";
       }    
     }
+
+    // 4年が押下されたとき　4年のみを表示
     function clickBtnFour() {
       for (var i = 0; i < one.length; i++) {
         one[i].style.display = "none";
@@ -300,5 +334,4 @@
       }    
     }
   </script>
-
 </html>
