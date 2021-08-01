@@ -15,7 +15,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	border: 0;
+	/* border: 0; */
 	font-style: normal;
 	font-weight: normal;
 	font-size: 100%;
@@ -29,6 +29,7 @@ body {
 	margin: 0;
 	padding: 0;
 }
+
 a:active,
 a:hover,
 a:focus {
@@ -103,7 +104,7 @@ img {
 	cursor: pointer;	/* マウスカーソルの形（リンクカーソル）を指定する */
 	border: 2px solid #fff;/* ボックスの境界線を実線で指定する */
 	border-radius: 5px;	/* 角丸を指定する */
-	background: pink;
+	background: #FEB1C6;
 	font-size: 15px;
 }
 
@@ -124,8 +125,8 @@ img {
 	cursor: pointer;	/* マウスカーソルの形（リンクカーソル）を指定する */
 	border: 2px solid #fff;/* ボックスの境界線を実線で指定する */
 	border-radius: 5px;	/* 角丸を指定する */
-	background: khaki;
-		font-size: 15px;
+	background: #FFE078;
+	font-size: 15px;
 }
 
 .products__sort3 {
@@ -145,7 +146,7 @@ img {
 	border: 2px solid #fff;/* ボックスの境界線を実線で指定する */
 	border-radius: 5px;	/* 角丸を指定する */
 	margin-right: auto;
-	background: lightblue;
+	background: #99D3D3;
 	font-size: 15px;
 }
 
@@ -156,13 +157,13 @@ img {
 }
 
 .ni .acd-label{
-	background-color: pink;
+	background-color: #FEB1C6;
 }
 .sya .acd-label{
-	background-color: khaki;
+	background-color: #FFE078;
 }
 .jo .acd-label{
-	background-color: lightblue;
+	background-color: #99D3D3;
 }
 .about .acd-label {
     background-color: #ef9998;
@@ -307,130 +308,6 @@ img {
 }
 
 
-.kokuban-t2 {
- position: relative;
- margin: 2em auto;
- padding: 3.2em 1em 1em;
- width: 60%; /* ボックス幅 */
- background-color: #006633; /* ボックス背景色 */
- color: #fff; /* 文章色 */
- border: 8px solid #b2771f; /* 枠線 */
- border-radius: 3px; /* 角の丸み */
- box-shadow: 0 0 5px #333, 0 0 5px #555 inset;
- text-align: center;
-}
-
-.kokuban-t2::before,
-.kokuban-t2::after {
- position: absolute;
- content: '';
- bottom: 0;
-}
-.kokuban-t2::before {
- right: 10px;
- border: solid 3px #fff; /*チョーク（白）*/
- width: 20px;
- border-radius: 3px 2px 0 2px;
-}
-.kokuban-t2::after {
- right: 40px;
- border: solid 3px #ffff6b; /*チョーク（黄色）*/
- width: 15px;
- border-radius: 8px 5px 2px 5px;
-}
-.title-t2 {
- position: absolute;
- left: 1em;
- top: .6em;
- font-weight: bold;
- font-size: 40px;
- color: #ffff6b; /* タイトル色 */
- font-family: 'M PLUS Rounded 1c', sans-serif;
-}
-
-.wboard-w2 {
-
- position: relative;
- margin: 2em auto;
- padding: 3.2em 1em 1em;
- width: 60%; /* ボックス幅 */
- background-color: #fff; /* ボックス背景色 */
- color: #000000; /* 文章色 */
- border: 5px solid #c6c6c6; /* 枠線 */
- box-shadow: 0 0 8px #333, 0 0 2px #555 inset;
- text-align: center;
-
-}
-.wboard-w2::before,
-.wboard-w2::after {
- position: absolute;
- content: '';
- bottom: 4px;
- width: 25px;
- border-radius: 2px;
- box-shadow: 1px 1px 3px #666;
-}
-.wboard-w2::before {
- right: 60px;
- border: solid 3px #333; /*飾りペン黒 */
- transform: rotate(2deg); /*飾りペン角度 */
-}
-.wboard-w2::after {
- right: 22px;
- border: solid 3px #ff0000; /*飾りペン赤 */
- transform: rotate(9deg); /*飾りペン角度 */
-}
-.title-w2 {
- position: absolute;
- top: .6em;
- left: 1em;
- font-weight: bold; /* 太文字 */
- font-size: 40px;
- color: #ff0000; /* タイトル文字色 */
- font-family: 'M PLUS Rounded 1c', sans-serif;
-
-}
-
-.title-w1 {
- position: absolute;
- left: 2em;
- font-weight: bold; /* 太文字 */
- font-size: 20px;
- color: #000000; /* タイトル文字色 */
- font-family: 'M PLUS Rounded 1c', sans-serif;
-
-}
-
-.title-t1 {
- position: absolute;
- left: 2em;
- font-weight: bold; /* 太文字 */
- font-size: 20px;
- color: #ffffff; /* タイトル文字色 */
- font-family: 'M PLUS Rounded 1c', sans-serif;
-
-}
-.title-t {
-  left: 2em;
-  font-weight: bold; /* 太文字 */
-  font-size: 20px;
-  color: #ffffff; /* タイトル文字色 */
-  font-family: 'M PLUS Rounded 1c', sans-serif;
-}
-.title-w {
-  left: 2em;
-  font-weight: bold; /* 太文字 */
-  font-size: 20px;
-  color: #000000; /* タイトル文字色 */
-  font-family: 'M PLUS Rounded 1c', sans-serif; 
-}
-
-.test_logo{
-	display:block;
-position:relative;
-z-index:9998;
-}
-
 .class_a {
 	display: inline-block;
 	width:80%;
@@ -455,14 +332,9 @@ z-index:9998;
 
 }
 
-/* .class_a table{
-	border:1;
-	height:500;
-	width:1000;
-	border-color:black;
-} */
-
-
+.class_a table {
+	border-collapse: collapse;
+}
 
 
 
@@ -855,7 +727,7 @@ width:162px;
 #header_list ul .header_menu_list span{
 	font-size:9px;
 	font-weight:900;
-	color:rgb(254, 177, 198);
+	color:#0d6fb8;
 	/* ここ */
 	text-transform: uppercase;
 }
@@ -887,8 +759,7 @@ width:162px;
 
 
 #header_list ul .logo span{
-	font-size:11px;
-	font-weight:700;
+	font-size:6px;
 	color:#0d6fb8;
 	text-transform: uppercase;
 	}
